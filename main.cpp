@@ -62,24 +62,29 @@ gcry_mpi_t clamp(gcry_mpi_t to_clamp) {
     return to_clamp;
 }
 
-void poly1305() {
-    gcry_mpi_t r = gcry_mpi_new(0);//le_bytes_to_num(key, 16);
+void poly1305(char *msg, char *key, bool is_test) {
+    gcry_mpi_t r, s;
+    if (is_test) {
+        r = gcry_mpi_new(0);
+        s = gcry_mpi_new(0);
+        gcry_mpi_scan(&s, GCRYMPI_FMT_HEX, "1bf54941aff6bf4afdb20dfb8a800301", 0, NULL);
+        gcry_mpi_scan(&r, GCRYMPI_FMT_HEX, "806d5400e52447c036d555408bed685", 0, NULL);
+        char test_msg[35] = "Cryptographic Forum Research Group";
+        msg = test_msg;
+    } else {
+        r = le_bytes_to_num(key, 16);
+        s = le_bytes_to_num(&key[16], 16);
+    }
     clamp(r);
-    gcry_mpi_t s = gcry_mpi_new(0);//le_bytes_to_num((&key)[16], 16);
     gcry_mpi_t a, p;
     gcry_mpi_scan(&a, GCRYMPI_FMT_HEX, "0", 0, NULL);
     gcry_mpi_scan(&p, GCRYMPI_FMT_HEX, "3fffffffffffffffffffffffffffffffb", 0, NULL);
 
-    gcry_mpi_scan(&s, GCRYMPI_FMT_HEX, "1bf54941aff6bf4afdb20dfb8a800301", 0, NULL);
-    gcry_mpi_scan(&r, GCRYMPI_FMT_HEX, "806d5400e52447c036d555408bed685", 0, NULL);
-
-    char msg[35] = "Cryptographic Forum Research Group";
 
     for (int i = 1; i <= std::ceil(strlen(msg) / 16) + 1; ++i) {
         std::cout << "Block " << i << std::endl;
         int count = (strlen(msg) - (i - 1) * 16 > 16) ? 16 : strlen(msg) - (i - 1) * 16;
         std::cout << "Block length: " << count << std::endl;
-        std::cout << "Block starts with: " << msg[(i - 1) * 16] << msg[(i - 1) * 16 + 1] << std::endl;
         gcry_mpi_t n = le_bytes_to_num(&msg[(i - 1) * 16], count);
         print_mpi(n);
 
@@ -110,15 +115,12 @@ void poly1305() {
     }
     //a += s
     gcry_mpi_add(a, a, s);
-    num_to_le_bytes(a);
-    std::cout << "TAG is: ";
-    print_mpi(a);
+    std::string result = num_to_le_bytes(a);
+    std::cout << "TAG is: " << result;
 }
 
 int main() {
-    char msg[35] = "Cryptographic Forum Research Group";
-    poly1305();
-    std::cout << std::setfill('0') << std::setw(sizeof(char) * 2) << std::hex << (int) msg[16];
+    poly1305(NULL, NULL, true);
     return 0;
 }
 

@@ -20,3 +20,123 @@ ld: library not found for -lc++
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
 
+Performing C SOURCE FILE Test AK_HAVE_ENDIAN_H failed with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_23546/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_23546.dir/build.make CMakeFiles/cmTC_23546.dir/build
+Building C object CMakeFiles/cmTC_23546.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_ENDIAN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_23546.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:12: fatal error: 'endian.h' file not found
+  #include <endian.h>
+           ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_23546.dir/src.c.o] Error 1
+make: *** [cmTC_23546/fast] Error 2
+
+
+Source file was:
+
+  #include <endian.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSENDIAN_H failed with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3ca84/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3ca84.dir/build.make CMakeFiles/cmTC_3ca84.dir/build
+Building C object CMakeFiles/cmTC_3ca84.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSENDIAN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_3ca84.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:15: fatal error: 'sys/endian.h' file not found
+     #include <sys/endian.h>
+              ^~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3ca84.dir/src.c.o] Error 1
+make: *** [cmTC_3ca84/fast] Error 2
+
+
+Source file was:
+
+     #include <sys/endian.h>
+     int main( void ) {
+        return 0;
+     }
+Performing C SOURCE FILE Test AK_HAVE_ENDIAN_H failed with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_56b40/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_56b40.dir/build.make CMakeFiles/cmTC_56b40.dir/build
+Building C object CMakeFiles/cmTC_56b40.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_ENDIAN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_56b40.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:12: fatal error: 'endian.h' file not found
+  #include <endian.h>
+           ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_56b40.dir/src.c.o] Error 1
+make: *** [cmTC_56b40/fast] Error 2
+
+
+Source file was:
+
+  #include <endian.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSENDIAN_H failed with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_05a72/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_05a72.dir/build.make CMakeFiles/cmTC_05a72.dir/build
+Building C object CMakeFiles/cmTC_05a72.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSENDIAN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_05a72.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:15: fatal error: 'sys/endian.h' file not found
+     #include <sys/endian.h>
+              ^~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_05a72.dir/src.c.o] Error 1
+make: *** [cmTC_05a72/fast] Error 2
+
+
+Source file was:
+
+     #include <sys/endian.h>
+     int main( void ) {
+        return 0;
+     }
+Performing C SOURCE FILE Test AK_HAVE_WINDOWS_H failed with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9f5df/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9f5df.dir/build.make CMakeFiles/cmTC_9f5df.dir/build
+Building C object CMakeFiles/cmTC_9f5df.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_WINDOWS_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_9f5df.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:12: fatal error: 'windows.h' file not found
+  #include <windows.h>
+           ^~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_9f5df.dir/src.c.o] Error 1
+make: *** [cmTC_9f5df/fast] Error 2
+
+
+Source file was:
+
+  #include <windows.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_BYTESWAP_H failed with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ba308/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ba308.dir/build.make CMakeFiles/cmTC_ba308.dir/build
+Building C object CMakeFiles/cmTC_ba308.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BYTESWAP_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_ba308.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:12: fatal error: 'byteswap.h' file not found
+  #include <byteswap.h>
+           ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ba308.dir/src.c.o] Error 1
+make: *** [cmTC_ba308/fast] Error 2
+
+
+Source file was:
+
+  #include <byteswap.h>
+  int main( void ) {
+     return 0;
+  }

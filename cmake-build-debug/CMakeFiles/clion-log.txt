@@ -1,4 +1,120 @@
 "/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/r.anchugov/CLionProjects/PaziLab2
+-- Performing Test AK_HAVE_WALL
+-- Performing Test AK_HAVE_WALL - Success
+-- Performing Test AK_HAVE_PEDANTIC_ERRORS
+-- Performing Test AK_HAVE_PEDANTIC_ERRORS - Success
+-- Performing Test AK_HAVE_O3
+-- Performing Test AK_HAVE_O3 - Success
+-- Performing Test AK_HAVE_FUNROLL_LOOPS
+-- Performing Test AK_HAVE_FUNROLL_LOOPS - Success
+-- Performing Test AK_HAVE_PIPE
+-- Performing Test AK_HAVE_PIPE - Success
+-- Performing Test AK_HAVE_MPCLMUL
+-- Performing Test AK_HAVE_MPCLMUL - Success
+-- Performing Test AK_HAVE_MSSE
+-- Performing Test AK_HAVE_MSSE - Success
+-- Performing Test AK_HAVE_MSSE2
+-- Performing Test AK_HAVE_MSSE2 - Success
+-- Performing Test AK_HAVE_MAVX
+-- Performing Test AK_HAVE_MAVX - Success
+-- Performing Test AK_HAVE_MAVX2
+-- Performing Test AK_HAVE_MAVX2 - Success
+-- Performing Test AK_HAVE_STDDEF_H
+-- Performing Test AK_HAVE_STDDEF_H - Success
+-- Performing Test AK_HAVE_STDIO_H
+-- Performing Test AK_HAVE_STDIO_H - Success
+-- Performing Test AK_HAVE_STDLIB_H
+-- Performing Test AK_HAVE_STDLIB_H - Success
+-- Performing Test AK_HAVE_STRING_H
+-- Performing Test AK_HAVE_STRING_H - Success
+-- Performing Test AK_HAVE_STRINGS_H
+-- Performing Test AK_HAVE_STRINGS_H - Success
+-- Performing Test AK_HAVE_CTYPE_H
+-- Performing Test AK_HAVE_CTYPE_H - Success
+-- Performing Test AK_HAVE_ENDIAN_H
+-- Performing Test AK_HAVE_ENDIAN_H - Failed
+-- Performing Test AK_HAVE_SYSENDIAN_H
+-- Performing Test AK_HAVE_SYSENDIAN_H - Failed
+-- Performing Test AK_HAVE_TIME_H
+-- Performing Test AK_HAVE_TIME_H - Success
+-- Performing Test AK_HAVE_SYSTIME_H
+-- Performing Test AK_HAVE_SYSTIME_H - Success
+-- Performing Test AK_HAVE_SYSLOG_H
+-- Performing Test AK_HAVE_SYSLOG_H - Success
+-- Performing Test AK_HAVE_UNISTD_H
+-- Performing Test AK_HAVE_UNISTD_H - Success
+-- Performing Test AK_HAVE_FCNTL_H
+-- Performing Test AK_HAVE_FCNTL_H - Success
+-- Performing Test AK_HAVE_LIMITS_H
+-- Performing Test AK_HAVE_LIMITS_H - Success
+-- Performing Test AK_HAVE_SYSMMAN_H
+-- Performing Test AK_HAVE_SYSMMAN_H - Success
+-- Performing Test AK_HAVE_SYSSTAT_H
+-- Performing Test AK_HAVE_SYSSTAT_H - Success
+-- Performing Test AK_HAVE_SYSTYPES_H
+-- Performing Test AK_HAVE_SYSTYPES_H - Success
+-- Performing Test AK_HAVE_SYSSOCKET_H
+-- Performing Test AK_HAVE_SYSSOCKET_H - Success
+-- Performing Test AK_HAVE_SYSUN_H
+-- Performing Test AK_HAVE_SYSUN_H - Success
+-- Performing Test AK_HAVE_SYSSELECT_H
+-- Performing Test AK_HAVE_SYSSELECT_H - Success
+-- Performing Test AK_HAVE_ERRNO_H
+-- Performing Test AK_HAVE_ERRNO_H - Success
+-- Performing Test AK_HAVE_TERMIOS_H
+-- Performing Test AK_HAVE_TERMIOS_H - Success
+-- Performing Test AK_HAVE_DIRENT_H
+-- Performing Test AK_HAVE_DIRENT_H - Success
+-- Performing Test AK_HAVE_FNMATCH_H
+-- Performing Test AK_HAVE_FNMATCH_H - Success
+-- Performing Test AK_HAVE_STDALIGN_H
+-- Performing Test AK_HAVE_STDALIGN_H - Success
+-- Performing Test AK_HAVE_STDARG_H
+-- Performing Test AK_HAVE_STDARG_H - Success
+-- Performing Test AK_HAVE_WINDOWS_H
+-- Performing Test AK_HAVE_WINDOWS_H - Failed
+-- Performing Test AK_HAVE_GETOPT_H
+-- Performing Test AK_HAVE_GETOPT_H - Success
+-- Performing Test AK_HAVE_LOCALE_H
+-- Performing Test AK_HAVE_LOCALE_H - Success
+-- Performing Test AK_HAVE_SIGNAL_H
+-- Performing Test AK_HAVE_SIGNAL_H - Success
+-- Performing Test AK_HAVE_BYTESWAP_H
+-- Performing Test AK_HAVE_BYTESWAP_H - Failed
+-- Performing Test AK_HAVE_BUILTIN_MULQ_GCC
+-- Performing Test AK_HAVE_BUILTIN_MULQ_GCC - Success
+-- Performing Test AK_HAVE_BUILTIN_CLMULEPI64
+-- Performing Test AK_HAVE_BUILTIN_CLMULEPI64 - Success
+-- Performing Test AK_HAVE_BUILTIN_MM256_SLL
+-- Performing Test AK_HAVE_BUILTIN_MM256_SLL - Success
+-- Generation of libakrypt-base.h is done
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Searching 16 bit integer - Using unsigned short
+-- Check if the system is big endian - little endian
+-- Used compile flags -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL -DAK_LITTLE_ENDIAN
+-- Path for libakrypt.conf is /etc
+-- Path for ca-certificates is /usr/share/ca-certificates/libakrypt
+-- Building libakrypt-base: shared library
+-- Building libakrypt: shared library
+-- Building libakrypt-base: static library
+-- Building libakrypt: shared library
+-- Added tests (now "make test" enabled)
+   -- random01;gf2n;mgm01;xtsmac01;asn1-build;asn1-parse;sign01;asn1-keys;asn1-cert;blom-keys
+-- Sources for aktool
+   -- aktool/aktool.c;aktool/aktool_show.c;aktool/aktool_test.c;aktool/aktool_asn1.c;aktool/aktool_key.c
+-- Additional header for aktool is libintl.h
+-- Additional library for aktool is /usr/local/lib/libintl.dylib
+-- doxygen not found
+-- Script for documentation is done (now "make doc" enabled)
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug

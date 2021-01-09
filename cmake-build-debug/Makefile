@@ -76,6 +76,40 @@ CMAKE_BINARY_DIR = /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -97,6 +131,51 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/ctest" --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cpack" --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cpack" --config ./CPackSourceConfig.cmake /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -131,44 +210,1655 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named PaziLab2
+# Target rules for targets named test-gf2n
 
 # Build rule for target.
-PaziLab2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PaziLab2
-.PHONY : PaziLab2
+test-gf2n: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-gf2n
+.PHONY : test-gf2n
 
 # fast build rule for target.
-PaziLab2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PaziLab2.dir/build.make CMakeFiles/PaziLab2.dir/build
-.PHONY : PaziLab2/fast
+test-gf2n/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-gf2n.dir/build.make CMakeFiles/test-gf2n.dir/build
+.PHONY : test-gf2n/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named test-random01
 
-.PHONY : main.o
+# Build rule for target.
+test-random01: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-random01
+.PHONY : test-random01
+
+# fast build rule for target.
+test-random01/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-random01.dir/build.make CMakeFiles/test-random01.dir/build
+.PHONY : test-random01/fast
+
+#=============================================================================
+# Target rules for targets named aktool
+
+# Build rule for target.
+aktool: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 aktool
+.PHONY : aktool
+
+# fast build rule for target.
+aktool/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/build
+.PHONY : aktool/fast
+
+#=============================================================================
+# Target rules for targets named doc
+
+# Build rule for target.
+doc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc
+.PHONY : doc
+
+# fast build rule for target.
+doc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
+.PHONY : doc/fast
+
+#=============================================================================
+# Target rules for targets named test-blom-keys
+
+# Build rule for target.
+test-blom-keys: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-blom-keys
+.PHONY : test-blom-keys
+
+# fast build rule for target.
+test-blom-keys/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-blom-keys.dir/build.make CMakeFiles/test-blom-keys.dir/build
+.PHONY : test-blom-keys/fast
+
+#=============================================================================
+# Target rules for targets named test-sign01
+
+# Build rule for target.
+test-sign01: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-sign01
+.PHONY : test-sign01
+
+# fast build rule for target.
+test-sign01/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-sign01.dir/build.make CMakeFiles/test-sign01.dir/build
+.PHONY : test-sign01/fast
+
+#=============================================================================
+# Target rules for targets named test-mgm01
+
+# Build rule for target.
+test-mgm01: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-mgm01
+.PHONY : test-mgm01
+
+# fast build rule for target.
+test-mgm01/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-mgm01.dir/build.make CMakeFiles/test-mgm01.dir/build
+.PHONY : test-mgm01/fast
+
+#=============================================================================
+# Target rules for targets named test-asn1-build
+
+# Build rule for target.
+test-asn1-build: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-asn1-build
+.PHONY : test-asn1-build
+
+# fast build rule for target.
+test-asn1-build/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-build.dir/build.make CMakeFiles/test-asn1-build.dir/build
+.PHONY : test-asn1-build/fast
+
+#=============================================================================
+# Target rules for targets named example-shared-ini
+
+# Build rule for target.
+example-shared-ini: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example-shared-ini
+.PHONY : example-shared-ini
+
+# fast build rule for target.
+example-shared-ini/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-shared-ini.dir/build.make CMakeFiles/example-shared-ini.dir/build
+.PHONY : example-shared-ini/fast
+
+#=============================================================================
+# Target rules for targets named example-shared-log
+
+# Build rule for target.
+example-shared-log: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example-shared-log
+.PHONY : example-shared-log
+
+# fast build rule for target.
+example-shared-log/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-shared-log.dir/build.make CMakeFiles/example-shared-log.dir/build
+.PHONY : example-shared-log/fast
+
+#=============================================================================
+# Target rules for targets named akrypt-static
+
+# Build rule for target.
+akrypt-static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 akrypt-static
+.PHONY : akrypt-static
+
+# fast build rule for target.
+akrypt-static/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/build
+.PHONY : akrypt-static/fast
+
+#=============================================================================
+# Target rules for targets named example-ini
+
+# Build rule for target.
+example-ini: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example-ini
+.PHONY : example-ini
+
+# fast build rule for target.
+example-ini/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-ini.dir/build.make CMakeFiles/example-ini.dir/build
+.PHONY : example-ini/fast
+
+#=============================================================================
+# Target rules for targets named test-asn1-cert
+
+# Build rule for target.
+test-asn1-cert: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-asn1-cert
+.PHONY : test-asn1-cert
+
+# fast build rule for target.
+test-asn1-cert/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-cert.dir/build.make CMakeFiles/test-asn1-cert.dir/build
+.PHONY : test-asn1-cert/fast
+
+#=============================================================================
+# Target rules for targets named test-asn1-keys
+
+# Build rule for target.
+test-asn1-keys: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-asn1-keys
+.PHONY : test-asn1-keys
+
+# fast build rule for target.
+test-asn1-keys/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-keys.dir/build.make CMakeFiles/test-asn1-keys.dir/build
+.PHONY : test-asn1-keys/fast
+
+#=============================================================================
+# Target rules for targets named test-xtsmac01
+
+# Build rule for target.
+test-xtsmac01: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-xtsmac01
+.PHONY : test-xtsmac01
+
+# fast build rule for target.
+test-xtsmac01/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-xtsmac01.dir/build.make CMakeFiles/test-xtsmac01.dir/build
+.PHONY : test-xtsmac01/fast
+
+#=============================================================================
+# Target rules for targets named example-log
+
+# Build rule for target.
+example-log: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example-log
+.PHONY : example-log
+
+# fast build rule for target.
+example-log/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-log.dir/build.make CMakeFiles/example-log.dir/build
+.PHONY : example-log/fast
+
+#=============================================================================
+# Target rules for targets named test-asn1-parse
+
+# Build rule for target.
+test-asn1-parse: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-asn1-parse
+.PHONY : test-asn1-parse
+
+# fast build rule for target.
+test-asn1-parse/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-parse.dir/build.make CMakeFiles/test-asn1-parse.dir/build
+.PHONY : test-asn1-parse/fast
+
+#=============================================================================
+# Target rules for targets named akrypt-shared
+
+# Build rule for target.
+akrypt-shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 akrypt-shared
+.PHONY : akrypt-shared
+
+# fast build rule for target.
+akrypt-shared/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/build
+.PHONY : akrypt-shared/fast
+
+#=============================================================================
+# Target rules for targets named example-shared-file
+
+# Build rule for target.
+example-shared-file: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example-shared-file
+.PHONY : example-shared-file
+
+# fast build rule for target.
+example-shared-file/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-shared-file.dir/build.make CMakeFiles/example-shared-file.dir/build
+.PHONY : example-shared-file/fast
+
+#=============================================================================
+# Target rules for targets named akbase-static
+
+# Build rule for target.
+akbase-static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 akbase-static
+.PHONY : akbase-static
+
+# fast build rule for target.
+akbase-static/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/build
+.PHONY : akbase-static/fast
+
+#=============================================================================
+# Target rules for targets named example-file
+
+# Build rule for target.
+example-file: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example-file
+.PHONY : example-file
+
+# fast build rule for target.
+example-file/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-file.dir/build.make CMakeFiles/example-file.dir/build
+.PHONY : example-file/fast
+
+#=============================================================================
+# Target rules for targets named akbase-shared
+
+# Build rule for target.
+akbase-shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 akbase-shared
+.PHONY : akbase-shared
+
+# fast build rule for target.
+akbase-shared/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/build
+.PHONY : akbase-shared/fast
+
+aktool/aktool.o: aktool/aktool.c.o
+
+.PHONY : aktool/aktool.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PaziLab2.dir/build.make CMakeFiles/PaziLab2.dir/main.cpp.o
-.PHONY : main.cpp.o
+aktool/aktool.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool.c.o
+.PHONY : aktool/aktool.c.o
 
-main.i: main.cpp.i
+aktool/aktool.i: aktool/aktool.c.i
 
-.PHONY : main.i
+.PHONY : aktool/aktool.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PaziLab2.dir/build.make CMakeFiles/PaziLab2.dir/main.cpp.i
-.PHONY : main.cpp.i
+aktool/aktool.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool.c.i
+.PHONY : aktool/aktool.c.i
 
-main.s: main.cpp.s
+aktool/aktool.s: aktool/aktool.c.s
 
-.PHONY : main.s
+.PHONY : aktool/aktool.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PaziLab2.dir/build.make CMakeFiles/PaziLab2.dir/main.cpp.s
-.PHONY : main.cpp.s
+aktool/aktool.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool.c.s
+.PHONY : aktool/aktool.c.s
+
+aktool/aktool_asn1.o: aktool/aktool_asn1.c.o
+
+.PHONY : aktool/aktool_asn1.o
+
+# target to build an object file
+aktool/aktool_asn1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool_asn1.c.o
+.PHONY : aktool/aktool_asn1.c.o
+
+aktool/aktool_asn1.i: aktool/aktool_asn1.c.i
+
+.PHONY : aktool/aktool_asn1.i
+
+# target to preprocess a source file
+aktool/aktool_asn1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool_asn1.c.i
+.PHONY : aktool/aktool_asn1.c.i
+
+aktool/aktool_asn1.s: aktool/aktool_asn1.c.s
+
+.PHONY : aktool/aktool_asn1.s
+
+# target to generate assembly for a file
+aktool/aktool_asn1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool_asn1.c.s
+.PHONY : aktool/aktool_asn1.c.s
+
+aktool/aktool_key.o: aktool/aktool_key.c.o
+
+.PHONY : aktool/aktool_key.o
+
+# target to build an object file
+aktool/aktool_key.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool_key.c.o
+.PHONY : aktool/aktool_key.c.o
+
+aktool/aktool_key.i: aktool/aktool_key.c.i
+
+.PHONY : aktool/aktool_key.i
+
+# target to preprocess a source file
+aktool/aktool_key.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool_key.c.i
+.PHONY : aktool/aktool_key.c.i
+
+aktool/aktool_key.s: aktool/aktool_key.c.s
+
+.PHONY : aktool/aktool_key.s
+
+# target to generate assembly for a file
+aktool/aktool_key.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool_key.c.s
+.PHONY : aktool/aktool_key.c.s
+
+aktool/aktool_show.o: aktool/aktool_show.c.o
+
+.PHONY : aktool/aktool_show.o
+
+# target to build an object file
+aktool/aktool_show.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool_show.c.o
+.PHONY : aktool/aktool_show.c.o
+
+aktool/aktool_show.i: aktool/aktool_show.c.i
+
+.PHONY : aktool/aktool_show.i
+
+# target to preprocess a source file
+aktool/aktool_show.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool_show.c.i
+.PHONY : aktool/aktool_show.c.i
+
+aktool/aktool_show.s: aktool/aktool_show.c.s
+
+.PHONY : aktool/aktool_show.s
+
+# target to generate assembly for a file
+aktool/aktool_show.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool_show.c.s
+.PHONY : aktool/aktool_show.c.s
+
+aktool/aktool_test.o: aktool/aktool_test.c.o
+
+.PHONY : aktool/aktool_test.o
+
+# target to build an object file
+aktool/aktool_test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool_test.c.o
+.PHONY : aktool/aktool_test.c.o
+
+aktool/aktool_test.i: aktool/aktool_test.c.i
+
+.PHONY : aktool/aktool_test.i
+
+# target to preprocess a source file
+aktool/aktool_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool_test.c.i
+.PHONY : aktool/aktool_test.c.i
+
+aktool/aktool_test.s: aktool/aktool_test.c.s
+
+.PHONY : aktool/aktool_test.s
+
+# target to generate assembly for a file
+aktool/aktool_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aktool.dir/build.make CMakeFiles/aktool.dir/aktool/aktool_test.c.s
+.PHONY : aktool/aktool_test.c.s
+
+examples/example-file.o: examples/example-file.c.o
+
+.PHONY : examples/example-file.o
+
+# target to build an object file
+examples/example-file.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-shared-file.dir/build.make CMakeFiles/example-shared-file.dir/examples/example-file.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-file.dir/build.make CMakeFiles/example-file.dir/examples/example-file.c.o
+.PHONY : examples/example-file.c.o
+
+examples/example-file.i: examples/example-file.c.i
+
+.PHONY : examples/example-file.i
+
+# target to preprocess a source file
+examples/example-file.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-shared-file.dir/build.make CMakeFiles/example-shared-file.dir/examples/example-file.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-file.dir/build.make CMakeFiles/example-file.dir/examples/example-file.c.i
+.PHONY : examples/example-file.c.i
+
+examples/example-file.s: examples/example-file.c.s
+
+.PHONY : examples/example-file.s
+
+# target to generate assembly for a file
+examples/example-file.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-shared-file.dir/build.make CMakeFiles/example-shared-file.dir/examples/example-file.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-file.dir/build.make CMakeFiles/example-file.dir/examples/example-file.c.s
+.PHONY : examples/example-file.c.s
+
+examples/example-ini.o: examples/example-ini.c.o
+
+.PHONY : examples/example-ini.o
+
+# target to build an object file
+examples/example-ini.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-shared-ini.dir/build.make CMakeFiles/example-shared-ini.dir/examples/example-ini.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-ini.dir/build.make CMakeFiles/example-ini.dir/examples/example-ini.c.o
+.PHONY : examples/example-ini.c.o
+
+examples/example-ini.i: examples/example-ini.c.i
+
+.PHONY : examples/example-ini.i
+
+# target to preprocess a source file
+examples/example-ini.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-shared-ini.dir/build.make CMakeFiles/example-shared-ini.dir/examples/example-ini.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-ini.dir/build.make CMakeFiles/example-ini.dir/examples/example-ini.c.i
+.PHONY : examples/example-ini.c.i
+
+examples/example-ini.s: examples/example-ini.c.s
+
+.PHONY : examples/example-ini.s
+
+# target to generate assembly for a file
+examples/example-ini.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-shared-ini.dir/build.make CMakeFiles/example-shared-ini.dir/examples/example-ini.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-ini.dir/build.make CMakeFiles/example-ini.dir/examples/example-ini.c.s
+.PHONY : examples/example-ini.c.s
+
+examples/example-log.o: examples/example-log.c.o
+
+.PHONY : examples/example-log.o
+
+# target to build an object file
+examples/example-log.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-shared-log.dir/build.make CMakeFiles/example-shared-log.dir/examples/example-log.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-log.dir/build.make CMakeFiles/example-log.dir/examples/example-log.c.o
+.PHONY : examples/example-log.c.o
+
+examples/example-log.i: examples/example-log.c.i
+
+.PHONY : examples/example-log.i
+
+# target to preprocess a source file
+examples/example-log.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-shared-log.dir/build.make CMakeFiles/example-shared-log.dir/examples/example-log.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-log.dir/build.make CMakeFiles/example-log.dir/examples/example-log.c.i
+.PHONY : examples/example-log.c.i
+
+examples/example-log.s: examples/example-log.c.s
+
+.PHONY : examples/example-log.s
+
+# target to generate assembly for a file
+examples/example-log.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-shared-log.dir/build.make CMakeFiles/example-shared-log.dir/examples/example-log.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example-log.dir/build.make CMakeFiles/example-log.dir/examples/example-log.c.s
+.PHONY : examples/example-log.c.s
+
+examples/test-asn1-build.o: examples/test-asn1-build.c.o
+
+.PHONY : examples/test-asn1-build.o
+
+# target to build an object file
+examples/test-asn1-build.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-build.dir/build.make CMakeFiles/test-asn1-build.dir/examples/test-asn1-build.c.o
+.PHONY : examples/test-asn1-build.c.o
+
+examples/test-asn1-build.i: examples/test-asn1-build.c.i
+
+.PHONY : examples/test-asn1-build.i
+
+# target to preprocess a source file
+examples/test-asn1-build.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-build.dir/build.make CMakeFiles/test-asn1-build.dir/examples/test-asn1-build.c.i
+.PHONY : examples/test-asn1-build.c.i
+
+examples/test-asn1-build.s: examples/test-asn1-build.c.s
+
+.PHONY : examples/test-asn1-build.s
+
+# target to generate assembly for a file
+examples/test-asn1-build.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-build.dir/build.make CMakeFiles/test-asn1-build.dir/examples/test-asn1-build.c.s
+.PHONY : examples/test-asn1-build.c.s
+
+examples/test-asn1-cert.o: examples/test-asn1-cert.c.o
+
+.PHONY : examples/test-asn1-cert.o
+
+# target to build an object file
+examples/test-asn1-cert.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-cert.dir/build.make CMakeFiles/test-asn1-cert.dir/examples/test-asn1-cert.c.o
+.PHONY : examples/test-asn1-cert.c.o
+
+examples/test-asn1-cert.i: examples/test-asn1-cert.c.i
+
+.PHONY : examples/test-asn1-cert.i
+
+# target to preprocess a source file
+examples/test-asn1-cert.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-cert.dir/build.make CMakeFiles/test-asn1-cert.dir/examples/test-asn1-cert.c.i
+.PHONY : examples/test-asn1-cert.c.i
+
+examples/test-asn1-cert.s: examples/test-asn1-cert.c.s
+
+.PHONY : examples/test-asn1-cert.s
+
+# target to generate assembly for a file
+examples/test-asn1-cert.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-cert.dir/build.make CMakeFiles/test-asn1-cert.dir/examples/test-asn1-cert.c.s
+.PHONY : examples/test-asn1-cert.c.s
+
+examples/test-asn1-keys.o: examples/test-asn1-keys.c.o
+
+.PHONY : examples/test-asn1-keys.o
+
+# target to build an object file
+examples/test-asn1-keys.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-keys.dir/build.make CMakeFiles/test-asn1-keys.dir/examples/test-asn1-keys.c.o
+.PHONY : examples/test-asn1-keys.c.o
+
+examples/test-asn1-keys.i: examples/test-asn1-keys.c.i
+
+.PHONY : examples/test-asn1-keys.i
+
+# target to preprocess a source file
+examples/test-asn1-keys.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-keys.dir/build.make CMakeFiles/test-asn1-keys.dir/examples/test-asn1-keys.c.i
+.PHONY : examples/test-asn1-keys.c.i
+
+examples/test-asn1-keys.s: examples/test-asn1-keys.c.s
+
+.PHONY : examples/test-asn1-keys.s
+
+# target to generate assembly for a file
+examples/test-asn1-keys.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-keys.dir/build.make CMakeFiles/test-asn1-keys.dir/examples/test-asn1-keys.c.s
+.PHONY : examples/test-asn1-keys.c.s
+
+examples/test-asn1-parse.o: examples/test-asn1-parse.c.o
+
+.PHONY : examples/test-asn1-parse.o
+
+# target to build an object file
+examples/test-asn1-parse.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-parse.dir/build.make CMakeFiles/test-asn1-parse.dir/examples/test-asn1-parse.c.o
+.PHONY : examples/test-asn1-parse.c.o
+
+examples/test-asn1-parse.i: examples/test-asn1-parse.c.i
+
+.PHONY : examples/test-asn1-parse.i
+
+# target to preprocess a source file
+examples/test-asn1-parse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-parse.dir/build.make CMakeFiles/test-asn1-parse.dir/examples/test-asn1-parse.c.i
+.PHONY : examples/test-asn1-parse.c.i
+
+examples/test-asn1-parse.s: examples/test-asn1-parse.c.s
+
+.PHONY : examples/test-asn1-parse.s
+
+# target to generate assembly for a file
+examples/test-asn1-parse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-asn1-parse.dir/build.make CMakeFiles/test-asn1-parse.dir/examples/test-asn1-parse.c.s
+.PHONY : examples/test-asn1-parse.c.s
+
+examples/test-blom-keys.o: examples/test-blom-keys.c.o
+
+.PHONY : examples/test-blom-keys.o
+
+# target to build an object file
+examples/test-blom-keys.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-blom-keys.dir/build.make CMakeFiles/test-blom-keys.dir/examples/test-blom-keys.c.o
+.PHONY : examples/test-blom-keys.c.o
+
+examples/test-blom-keys.i: examples/test-blom-keys.c.i
+
+.PHONY : examples/test-blom-keys.i
+
+# target to preprocess a source file
+examples/test-blom-keys.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-blom-keys.dir/build.make CMakeFiles/test-blom-keys.dir/examples/test-blom-keys.c.i
+.PHONY : examples/test-blom-keys.c.i
+
+examples/test-blom-keys.s: examples/test-blom-keys.c.s
+
+.PHONY : examples/test-blom-keys.s
+
+# target to generate assembly for a file
+examples/test-blom-keys.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-blom-keys.dir/build.make CMakeFiles/test-blom-keys.dir/examples/test-blom-keys.c.s
+.PHONY : examples/test-blom-keys.c.s
+
+examples/test-gf2n.o: examples/test-gf2n.c.o
+
+.PHONY : examples/test-gf2n.o
+
+# target to build an object file
+examples/test-gf2n.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-gf2n.dir/build.make CMakeFiles/test-gf2n.dir/examples/test-gf2n.c.o
+.PHONY : examples/test-gf2n.c.o
+
+examples/test-gf2n.i: examples/test-gf2n.c.i
+
+.PHONY : examples/test-gf2n.i
+
+# target to preprocess a source file
+examples/test-gf2n.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-gf2n.dir/build.make CMakeFiles/test-gf2n.dir/examples/test-gf2n.c.i
+.PHONY : examples/test-gf2n.c.i
+
+examples/test-gf2n.s: examples/test-gf2n.c.s
+
+.PHONY : examples/test-gf2n.s
+
+# target to generate assembly for a file
+examples/test-gf2n.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-gf2n.dir/build.make CMakeFiles/test-gf2n.dir/examples/test-gf2n.c.s
+.PHONY : examples/test-gf2n.c.s
+
+examples/test-mgm01.o: examples/test-mgm01.c.o
+
+.PHONY : examples/test-mgm01.o
+
+# target to build an object file
+examples/test-mgm01.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-mgm01.dir/build.make CMakeFiles/test-mgm01.dir/examples/test-mgm01.c.o
+.PHONY : examples/test-mgm01.c.o
+
+examples/test-mgm01.i: examples/test-mgm01.c.i
+
+.PHONY : examples/test-mgm01.i
+
+# target to preprocess a source file
+examples/test-mgm01.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-mgm01.dir/build.make CMakeFiles/test-mgm01.dir/examples/test-mgm01.c.i
+.PHONY : examples/test-mgm01.c.i
+
+examples/test-mgm01.s: examples/test-mgm01.c.s
+
+.PHONY : examples/test-mgm01.s
+
+# target to generate assembly for a file
+examples/test-mgm01.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-mgm01.dir/build.make CMakeFiles/test-mgm01.dir/examples/test-mgm01.c.s
+.PHONY : examples/test-mgm01.c.s
+
+examples/test-random01.o: examples/test-random01.c.o
+
+.PHONY : examples/test-random01.o
+
+# target to build an object file
+examples/test-random01.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-random01.dir/build.make CMakeFiles/test-random01.dir/examples/test-random01.c.o
+.PHONY : examples/test-random01.c.o
+
+examples/test-random01.i: examples/test-random01.c.i
+
+.PHONY : examples/test-random01.i
+
+# target to preprocess a source file
+examples/test-random01.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-random01.dir/build.make CMakeFiles/test-random01.dir/examples/test-random01.c.i
+.PHONY : examples/test-random01.c.i
+
+examples/test-random01.s: examples/test-random01.c.s
+
+.PHONY : examples/test-random01.s
+
+# target to generate assembly for a file
+examples/test-random01.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-random01.dir/build.make CMakeFiles/test-random01.dir/examples/test-random01.c.s
+.PHONY : examples/test-random01.c.s
+
+examples/test-sign01.o: examples/test-sign01.c.o
+
+.PHONY : examples/test-sign01.o
+
+# target to build an object file
+examples/test-sign01.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-sign01.dir/build.make CMakeFiles/test-sign01.dir/examples/test-sign01.c.o
+.PHONY : examples/test-sign01.c.o
+
+examples/test-sign01.i: examples/test-sign01.c.i
+
+.PHONY : examples/test-sign01.i
+
+# target to preprocess a source file
+examples/test-sign01.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-sign01.dir/build.make CMakeFiles/test-sign01.dir/examples/test-sign01.c.i
+.PHONY : examples/test-sign01.c.i
+
+examples/test-sign01.s: examples/test-sign01.c.s
+
+.PHONY : examples/test-sign01.s
+
+# target to generate assembly for a file
+examples/test-sign01.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-sign01.dir/build.make CMakeFiles/test-sign01.dir/examples/test-sign01.c.s
+.PHONY : examples/test-sign01.c.s
+
+examples/test-xtsmac01.o: examples/test-xtsmac01.c.o
+
+.PHONY : examples/test-xtsmac01.o
+
+# target to build an object file
+examples/test-xtsmac01.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-xtsmac01.dir/build.make CMakeFiles/test-xtsmac01.dir/examples/test-xtsmac01.c.o
+.PHONY : examples/test-xtsmac01.c.o
+
+examples/test-xtsmac01.i: examples/test-xtsmac01.c.i
+
+.PHONY : examples/test-xtsmac01.i
+
+# target to preprocess a source file
+examples/test-xtsmac01.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-xtsmac01.dir/build.make CMakeFiles/test-xtsmac01.dir/examples/test-xtsmac01.c.i
+.PHONY : examples/test-xtsmac01.c.i
+
+examples/test-xtsmac01.s: examples/test-xtsmac01.c.s
+
+.PHONY : examples/test-xtsmac01.s
+
+# target to generate assembly for a file
+examples/test-xtsmac01.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-xtsmac01.dir/build.make CMakeFiles/test-xtsmac01.dir/examples/test-xtsmac01.c.s
+.PHONY : examples/test-xtsmac01.c.s
+
+source/ak_acpkm.o: source/ak_acpkm.c.o
+
+.PHONY : source/ak_acpkm.o
+
+# target to build an object file
+source/ak_acpkm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_acpkm.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_acpkm.c.o
+.PHONY : source/ak_acpkm.c.o
+
+source/ak_acpkm.i: source/ak_acpkm.c.i
+
+.PHONY : source/ak_acpkm.i
+
+# target to preprocess a source file
+source/ak_acpkm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_acpkm.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_acpkm.c.i
+.PHONY : source/ak_acpkm.c.i
+
+source/ak_acpkm.s: source/ak_acpkm.c.s
+
+.PHONY : source/ak_acpkm.s
+
+# target to generate assembly for a file
+source/ak_acpkm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_acpkm.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_acpkm.c.s
+.PHONY : source/ak_acpkm.c.s
+
+source/ak_asn1.o: source/ak_asn1.c.o
+
+.PHONY : source/ak_asn1.o
+
+# target to build an object file
+source/ak_asn1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_asn1.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_asn1.c.o
+.PHONY : source/ak_asn1.c.o
+
+source/ak_asn1.i: source/ak_asn1.c.i
+
+.PHONY : source/ak_asn1.i
+
+# target to preprocess a source file
+source/ak_asn1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_asn1.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_asn1.c.i
+.PHONY : source/ak_asn1.c.i
+
+source/ak_asn1.s: source/ak_asn1.c.s
+
+.PHONY : source/ak_asn1.s
+
+# target to generate assembly for a file
+source/ak_asn1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_asn1.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_asn1.c.s
+.PHONY : source/ak_asn1.c.s
+
+source/ak_asn1_cert.o: source/ak_asn1_cert.c.o
+
+.PHONY : source/ak_asn1_cert.o
+
+# target to build an object file
+source/ak_asn1_cert.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_asn1_cert.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_asn1_cert.c.o
+.PHONY : source/ak_asn1_cert.c.o
+
+source/ak_asn1_cert.i: source/ak_asn1_cert.c.i
+
+.PHONY : source/ak_asn1_cert.i
+
+# target to preprocess a source file
+source/ak_asn1_cert.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_asn1_cert.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_asn1_cert.c.i
+.PHONY : source/ak_asn1_cert.c.i
+
+source/ak_asn1_cert.s: source/ak_asn1_cert.c.s
+
+.PHONY : source/ak_asn1_cert.s
+
+# target to generate assembly for a file
+source/ak_asn1_cert.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_asn1_cert.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_asn1_cert.c.s
+.PHONY : source/ak_asn1_cert.c.s
+
+source/ak_asn1_keys.o: source/ak_asn1_keys.c.o
+
+.PHONY : source/ak_asn1_keys.o
+
+# target to build an object file
+source/ak_asn1_keys.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_asn1_keys.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_asn1_keys.c.o
+.PHONY : source/ak_asn1_keys.c.o
+
+source/ak_asn1_keys.i: source/ak_asn1_keys.c.i
+
+.PHONY : source/ak_asn1_keys.i
+
+# target to preprocess a source file
+source/ak_asn1_keys.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_asn1_keys.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_asn1_keys.c.i
+.PHONY : source/ak_asn1_keys.c.i
+
+source/ak_asn1_keys.s: source/ak_asn1_keys.c.s
+
+.PHONY : source/ak_asn1_keys.s
+
+# target to generate assembly for a file
+source/ak_asn1_keys.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_asn1_keys.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_asn1_keys.c.s
+.PHONY : source/ak_asn1_keys.c.s
+
+source/ak_base64.o: source/ak_base64.c.o
+
+.PHONY : source/ak_base64.o
+
+# target to build an object file
+source/ak_base64.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_base64.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_base64.c.o
+.PHONY : source/ak_base64.c.o
+
+source/ak_base64.i: source/ak_base64.c.i
+
+.PHONY : source/ak_base64.i
+
+# target to preprocess a source file
+source/ak_base64.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_base64.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_base64.c.i
+.PHONY : source/ak_base64.c.i
+
+source/ak_base64.s: source/ak_base64.c.s
+
+.PHONY : source/ak_base64.s
+
+# target to generate assembly for a file
+source/ak_base64.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_base64.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_base64.c.s
+.PHONY : source/ak_base64.c.s
+
+source/ak_bckey.o: source/ak_bckey.c.o
+
+.PHONY : source/ak_bckey.o
+
+# target to build an object file
+source/ak_bckey.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_bckey.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_bckey.c.o
+.PHONY : source/ak_bckey.c.o
+
+source/ak_bckey.i: source/ak_bckey.c.i
+
+.PHONY : source/ak_bckey.i
+
+# target to preprocess a source file
+source/ak_bckey.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_bckey.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_bckey.c.i
+.PHONY : source/ak_bckey.c.i
+
+source/ak_bckey.s: source/ak_bckey.c.s
+
+.PHONY : source/ak_bckey.s
+
+# target to generate assembly for a file
+source/ak_bckey.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_bckey.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_bckey.c.s
+.PHONY : source/ak_bckey.c.s
+
+source/ak_blom.o: source/ak_blom.c.o
+
+.PHONY : source/ak_blom.o
+
+# target to build an object file
+source/ak_blom.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_blom.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_blom.c.o
+.PHONY : source/ak_blom.c.o
+
+source/ak_blom.i: source/ak_blom.c.i
+
+.PHONY : source/ak_blom.i
+
+# target to preprocess a source file
+source/ak_blom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_blom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_blom.c.i
+.PHONY : source/ak_blom.c.i
+
+source/ak_blom.s: source/ak_blom.c.s
+
+.PHONY : source/ak_blom.s
+
+# target to generate assembly for a file
+source/ak_blom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_blom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_blom.c.s
+.PHONY : source/ak_blom.c.s
+
+source/ak_cmac.o: source/ak_cmac.c.o
+
+.PHONY : source/ak_cmac.o
+
+# target to build an object file
+source/ak_cmac.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_cmac.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_cmac.c.o
+.PHONY : source/ak_cmac.c.o
+
+source/ak_cmac.i: source/ak_cmac.c.i
+
+.PHONY : source/ak_cmac.i
+
+# target to preprocess a source file
+source/ak_cmac.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_cmac.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_cmac.c.i
+.PHONY : source/ak_cmac.c.i
+
+source/ak_cmac.s: source/ak_cmac.c.s
+
+.PHONY : source/ak_cmac.s
+
+# target to generate assembly for a file
+source/ak_cmac.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_cmac.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_cmac.c.s
+.PHONY : source/ak_cmac.c.s
+
+source/ak_curves.o: source/ak_curves.c.o
+
+.PHONY : source/ak_curves.o
+
+# target to build an object file
+source/ak_curves.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_curves.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_curves.c.o
+.PHONY : source/ak_curves.c.o
+
+source/ak_curves.i: source/ak_curves.c.i
+
+.PHONY : source/ak_curves.i
+
+# target to preprocess a source file
+source/ak_curves.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_curves.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_curves.c.i
+.PHONY : source/ak_curves.c.i
+
+source/ak_curves.s: source/ak_curves.c.s
+
+.PHONY : source/ak_curves.s
+
+# target to generate assembly for a file
+source/ak_curves.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_curves.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_curves.c.s
+.PHONY : source/ak_curves.c.s
+
+source/ak_file.o: source/ak_file.c.o
+
+.PHONY : source/ak_file.o
+
+# target to build an object file
+source/ak_file.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_file.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_file.c.o
+.PHONY : source/ak_file.c.o
+
+source/ak_file.i: source/ak_file.c.i
+
+.PHONY : source/ak_file.i
+
+# target to preprocess a source file
+source/ak_file.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_file.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_file.c.i
+.PHONY : source/ak_file.c.i
+
+source/ak_file.s: source/ak_file.c.s
+
+.PHONY : source/ak_file.s
+
+# target to generate assembly for a file
+source/ak_file.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_file.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_file.c.s
+.PHONY : source/ak_file.c.s
+
+source/ak_gf2n.o: source/ak_gf2n.c.o
+
+.PHONY : source/ak_gf2n.o
+
+# target to build an object file
+source/ak_gf2n.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_gf2n.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_gf2n.c.o
+.PHONY : source/ak_gf2n.c.o
+
+source/ak_gf2n.i: source/ak_gf2n.c.i
+
+.PHONY : source/ak_gf2n.i
+
+# target to preprocess a source file
+source/ak_gf2n.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_gf2n.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_gf2n.c.i
+.PHONY : source/ak_gf2n.c.i
+
+source/ak_gf2n.s: source/ak_gf2n.c.s
+
+.PHONY : source/ak_gf2n.s
+
+# target to generate assembly for a file
+source/ak_gf2n.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_gf2n.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_gf2n.c.s
+.PHONY : source/ak_gf2n.c.s
+
+source/ak_hash.o: source/ak_hash.c.o
+
+.PHONY : source/ak_hash.o
+
+# target to build an object file
+source/ak_hash.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_hash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_hash.c.o
+.PHONY : source/ak_hash.c.o
+
+source/ak_hash.i: source/ak_hash.c.i
+
+.PHONY : source/ak_hash.i
+
+# target to preprocess a source file
+source/ak_hash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_hash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_hash.c.i
+.PHONY : source/ak_hash.c.i
+
+source/ak_hash.s: source/ak_hash.c.s
+
+.PHONY : source/ak_hash.s
+
+# target to generate assembly for a file
+source/ak_hash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_hash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_hash.c.s
+.PHONY : source/ak_hash.c.s
+
+source/ak_hmac.o: source/ak_hmac.c.o
+
+.PHONY : source/ak_hmac.o
+
+# target to build an object file
+source/ak_hmac.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_hmac.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_hmac.c.o
+.PHONY : source/ak_hmac.c.o
+
+source/ak_hmac.i: source/ak_hmac.c.i
+
+.PHONY : source/ak_hmac.i
+
+# target to preprocess a source file
+source/ak_hmac.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_hmac.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_hmac.c.i
+.PHONY : source/ak_hmac.c.i
+
+source/ak_hmac.s: source/ak_hmac.c.s
+
+.PHONY : source/ak_hmac.s
+
+# target to generate assembly for a file
+source/ak_hmac.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_hmac.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_hmac.c.s
+.PHONY : source/ak_hmac.c.s
+
+source/ak_ini.o: source/ak_ini.c.o
+
+.PHONY : source/ak_ini.o
+
+# target to build an object file
+source/ak_ini.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_ini.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_ini.c.o
+.PHONY : source/ak_ini.c.o
+
+source/ak_ini.i: source/ak_ini.c.i
+
+.PHONY : source/ak_ini.i
+
+# target to preprocess a source file
+source/ak_ini.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_ini.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_ini.c.i
+.PHONY : source/ak_ini.c.i
+
+source/ak_ini.s: source/ak_ini.c.s
+
+.PHONY : source/ak_ini.s
+
+# target to generate assembly for a file
+source/ak_ini.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_ini.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_ini.c.s
+.PHONY : source/ak_ini.c.s
+
+source/ak_kuznechik.o: source/ak_kuznechik.c.o
+
+.PHONY : source/ak_kuznechik.o
+
+# target to build an object file
+source/ak_kuznechik.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_kuznechik.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_kuznechik.c.o
+.PHONY : source/ak_kuznechik.c.o
+
+source/ak_kuznechik.i: source/ak_kuznechik.c.i
+
+.PHONY : source/ak_kuznechik.i
+
+# target to preprocess a source file
+source/ak_kuznechik.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_kuznechik.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_kuznechik.c.i
+.PHONY : source/ak_kuznechik.c.i
+
+source/ak_kuznechik.s: source/ak_kuznechik.c.s
+
+.PHONY : source/ak_kuznechik.s
+
+# target to generate assembly for a file
+source/ak_kuznechik.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_kuznechik.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_kuznechik.c.s
+.PHONY : source/ak_kuznechik.c.s
+
+source/ak_libakrypt.o: source/ak_libakrypt.c.o
+
+.PHONY : source/ak_libakrypt.o
+
+# target to build an object file
+source/ak_libakrypt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_libakrypt.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_libakrypt.c.o
+.PHONY : source/ak_libakrypt.c.o
+
+source/ak_libakrypt.i: source/ak_libakrypt.c.i
+
+.PHONY : source/ak_libakrypt.i
+
+# target to preprocess a source file
+source/ak_libakrypt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_libakrypt.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_libakrypt.c.i
+.PHONY : source/ak_libakrypt.c.i
+
+source/ak_libakrypt.s: source/ak_libakrypt.c.s
+
+.PHONY : source/ak_libakrypt.s
+
+# target to generate assembly for a file
+source/ak_libakrypt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_libakrypt.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_libakrypt.c.s
+.PHONY : source/ak_libakrypt.c.s
+
+source/ak_list.o: source/ak_list.c.o
+
+.PHONY : source/ak_list.o
+
+# target to build an object file
+source/ak_list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_list.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_list.c.o
+.PHONY : source/ak_list.c.o
+
+source/ak_list.i: source/ak_list.c.i
+
+.PHONY : source/ak_list.i
+
+# target to preprocess a source file
+source/ak_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_list.c.i
+.PHONY : source/ak_list.c.i
+
+source/ak_list.s: source/ak_list.c.s
+
+.PHONY : source/ak_list.s
+
+# target to generate assembly for a file
+source/ak_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_list.c.s
+.PHONY : source/ak_list.c.s
+
+source/ak_mac.o: source/ak_mac.c.o
+
+.PHONY : source/ak_mac.o
+
+# target to build an object file
+source/ak_mac.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_mac.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_mac.c.o
+.PHONY : source/ak_mac.c.o
+
+source/ak_mac.i: source/ak_mac.c.i
+
+.PHONY : source/ak_mac.i
+
+# target to preprocess a source file
+source/ak_mac.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_mac.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_mac.c.i
+.PHONY : source/ak_mac.c.i
+
+source/ak_mac.s: source/ak_mac.c.s
+
+.PHONY : source/ak_mac.s
+
+# target to generate assembly for a file
+source/ak_mac.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_mac.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_mac.c.s
+.PHONY : source/ak_mac.c.s
+
+source/ak_magma.o: source/ak_magma.c.o
+
+.PHONY : source/ak_magma.o
+
+# target to build an object file
+source/ak_magma.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_magma.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_magma.c.o
+.PHONY : source/ak_magma.c.o
+
+source/ak_magma.i: source/ak_magma.c.i
+
+.PHONY : source/ak_magma.i
+
+# target to preprocess a source file
+source/ak_magma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_magma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_magma.c.i
+.PHONY : source/ak_magma.c.i
+
+source/ak_magma.s: source/ak_magma.c.s
+
+.PHONY : source/ak_magma.s
+
+# target to generate assembly for a file
+source/ak_magma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_magma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_magma.c.s
+.PHONY : source/ak_magma.c.s
+
+source/ak_mgm.o: source/ak_mgm.c.o
+
+.PHONY : source/ak_mgm.o
+
+# target to build an object file
+source/ak_mgm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_mgm.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_mgm.c.o
+.PHONY : source/ak_mgm.c.o
+
+source/ak_mgm.i: source/ak_mgm.c.i
+
+.PHONY : source/ak_mgm.i
+
+# target to preprocess a source file
+source/ak_mgm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_mgm.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_mgm.c.i
+.PHONY : source/ak_mgm.c.i
+
+source/ak_mgm.s: source/ak_mgm.c.s
+
+.PHONY : source/ak_mgm.s
+
+# target to generate assembly for a file
+source/ak_mgm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_mgm.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_mgm.c.s
+.PHONY : source/ak_mgm.c.s
+
+source/ak_mpzn.o: source/ak_mpzn.c.o
+
+.PHONY : source/ak_mpzn.o
+
+# target to build an object file
+source/ak_mpzn.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_mpzn.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_mpzn.c.o
+.PHONY : source/ak_mpzn.c.o
+
+source/ak_mpzn.i: source/ak_mpzn.c.i
+
+.PHONY : source/ak_mpzn.i
+
+# target to preprocess a source file
+source/ak_mpzn.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_mpzn.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_mpzn.c.i
+.PHONY : source/ak_mpzn.c.i
+
+source/ak_mpzn.s: source/ak_mpzn.c.s
+
+.PHONY : source/ak_mpzn.s
+
+# target to generate assembly for a file
+source/ak_mpzn.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_mpzn.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_mpzn.c.s
+.PHONY : source/ak_mpzn.c.s
+
+source/ak_oid.o: source/ak_oid.c.o
+
+.PHONY : source/ak_oid.o
+
+# target to build an object file
+source/ak_oid.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_oid.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_oid.c.o
+.PHONY : source/ak_oid.c.o
+
+source/ak_oid.i: source/ak_oid.c.i
+
+.PHONY : source/ak_oid.i
+
+# target to preprocess a source file
+source/ak_oid.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_oid.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_oid.c.i
+.PHONY : source/ak_oid.c.i
+
+source/ak_oid.s: source/ak_oid.c.s
+
+.PHONY : source/ak_oid.s
+
+# target to generate assembly for a file
+source/ak_oid.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_oid.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_oid.c.s
+.PHONY : source/ak_oid.c.s
+
+source/ak_options.o: source/ak_options.c.o
+
+.PHONY : source/ak_options.o
+
+# target to build an object file
+source/ak_options.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_options.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_options.c.o
+.PHONY : source/ak_options.c.o
+
+source/ak_options.i: source/ak_options.c.i
+
+.PHONY : source/ak_options.i
+
+# target to preprocess a source file
+source/ak_options.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_options.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_options.c.i
+.PHONY : source/ak_options.c.i
+
+source/ak_options.s: source/ak_options.c.s
+
+.PHONY : source/ak_options.s
+
+# target to generate assembly for a file
+source/ak_options.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_options.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_options.c.s
+.PHONY : source/ak_options.c.s
+
+source/ak_parameters.o: source/ak_parameters.c.o
+
+.PHONY : source/ak_parameters.o
+
+# target to build an object file
+source/ak_parameters.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_parameters.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_parameters.c.o
+.PHONY : source/ak_parameters.c.o
+
+source/ak_parameters.i: source/ak_parameters.c.i
+
+.PHONY : source/ak_parameters.i
+
+# target to preprocess a source file
+source/ak_parameters.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_parameters.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_parameters.c.i
+.PHONY : source/ak_parameters.c.i
+
+source/ak_parameters.s: source/ak_parameters.c.s
+
+.PHONY : source/ak_parameters.s
+
+# target to generate assembly for a file
+source/ak_parameters.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_parameters.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_parameters.c.s
+.PHONY : source/ak_parameters.c.s
+
+source/ak_random.o: source/ak_random.c.o
+
+.PHONY : source/ak_random.o
+
+# target to build an object file
+source/ak_random.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_random.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_random.c.o
+.PHONY : source/ak_random.c.o
+
+source/ak_random.i: source/ak_random.c.i
+
+.PHONY : source/ak_random.i
+
+# target to preprocess a source file
+source/ak_random.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_random.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_random.c.i
+.PHONY : source/ak_random.c.i
+
+source/ak_random.s: source/ak_random.c.s
+
+.PHONY : source/ak_random.s
+
+# target to generate assembly for a file
+source/ak_random.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_random.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_random.c.s
+.PHONY : source/ak_random.c.s
+
+source/ak_sign.o: source/ak_sign.c.o
+
+.PHONY : source/ak_sign.o
+
+# target to build an object file
+source/ak_sign.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_sign.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_sign.c.o
+.PHONY : source/ak_sign.c.o
+
+source/ak_sign.i: source/ak_sign.c.i
+
+.PHONY : source/ak_sign.i
+
+# target to preprocess a source file
+source/ak_sign.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_sign.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_sign.c.i
+.PHONY : source/ak_sign.c.i
+
+source/ak_sign.s: source/ak_sign.c.s
+
+.PHONY : source/ak_sign.s
+
+# target to generate assembly for a file
+source/ak_sign.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_sign.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_sign.c.s
+.PHONY : source/ak_sign.c.s
+
+source/ak_skey.o: source/ak_skey.c.o
+
+.PHONY : source/ak_skey.o
+
+# target to build an object file
+source/ak_skey.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_skey.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_skey.c.o
+.PHONY : source/ak_skey.c.o
+
+source/ak_skey.i: source/ak_skey.c.i
+
+.PHONY : source/ak_skey.i
+
+# target to preprocess a source file
+source/ak_skey.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_skey.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_skey.c.i
+.PHONY : source/ak_skey.c.i
+
+source/ak_skey.s: source/ak_skey.c.s
+
+.PHONY : source/ak_skey.s
+
+# target to generate assembly for a file
+source/ak_skey.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_skey.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_skey.c.s
+.PHONY : source/ak_skey.c.s
+
+source/ak_tools.o: source/ak_tools.c.o
+
+.PHONY : source/ak_tools.o
+
+# target to build an object file
+source/ak_tools.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_tools.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_tools.c.o
+.PHONY : source/ak_tools.c.o
+
+source/ak_tools.i: source/ak_tools.c.i
+
+.PHONY : source/ak_tools.i
+
+# target to preprocess a source file
+source/ak_tools.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_tools.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_tools.c.i
+.PHONY : source/ak_tools.c.i
+
+source/ak_tools.s: source/ak_tools.c.s
+
+.PHONY : source/ak_tools.s
+
+# target to generate assembly for a file
+source/ak_tools.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-static.dir/build.make CMakeFiles/akbase-static.dir/source/ak_tools.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akbase-shared.dir/build.make CMakeFiles/akbase-shared.dir/source/ak_tools.c.s
+.PHONY : source/ak_tools.c.s
+
+source/ak_xts.o: source/ak_xts.c.o
+
+.PHONY : source/ak_xts.o
+
+# target to build an object file
+source/ak_xts.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_xts.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_xts.c.o
+.PHONY : source/ak_xts.c.o
+
+source/ak_xts.i: source/ak_xts.c.i
+
+.PHONY : source/ak_xts.i
+
+# target to preprocess a source file
+source/ak_xts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_xts.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_xts.c.i
+.PHONY : source/ak_xts.c.i
+
+source/ak_xts.s: source/ak_xts.c.s
+
+.PHONY : source/ak_xts.s
+
+# target to generate assembly for a file
+source/ak_xts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-static.dir/build.make CMakeFiles/akrypt-static.dir/source/ak_xts.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/akrypt-shared.dir/build.make CMakeFiles/akrypt-shared.dir/source/ak_xts.c.s
+.PHONY : source/ak_xts.c.s
 
 # Help Target
 help:
@@ -177,11 +1867,177 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
-	@echo "... PaziLab2"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... test"
+	@echo "... doc"
+	@echo "... akbase-shared"
+	@echo "... akbase-static"
+	@echo "... akrypt-shared"
+	@echo "... akrypt-static"
+	@echo "... aktool"
+	@echo "... example-file"
+	@echo "... example-ini"
+	@echo "... example-log"
+	@echo "... example-shared-file"
+	@echo "... example-shared-ini"
+	@echo "... example-shared-log"
+	@echo "... test-asn1-build"
+	@echo "... test-asn1-cert"
+	@echo "... test-asn1-keys"
+	@echo "... test-asn1-parse"
+	@echo "... test-blom-keys"
+	@echo "... test-gf2n"
+	@echo "... test-mgm01"
+	@echo "... test-random01"
+	@echo "... test-sign01"
+	@echo "... test-xtsmac01"
+	@echo "... aktool/aktool.o"
+	@echo "... aktool/aktool.i"
+	@echo "... aktool/aktool.s"
+	@echo "... aktool/aktool_asn1.o"
+	@echo "... aktool/aktool_asn1.i"
+	@echo "... aktool/aktool_asn1.s"
+	@echo "... aktool/aktool_key.o"
+	@echo "... aktool/aktool_key.i"
+	@echo "... aktool/aktool_key.s"
+	@echo "... aktool/aktool_show.o"
+	@echo "... aktool/aktool_show.i"
+	@echo "... aktool/aktool_show.s"
+	@echo "... aktool/aktool_test.o"
+	@echo "... aktool/aktool_test.i"
+	@echo "... aktool/aktool_test.s"
+	@echo "... examples/example-file.o"
+	@echo "... examples/example-file.i"
+	@echo "... examples/example-file.s"
+	@echo "... examples/example-ini.o"
+	@echo "... examples/example-ini.i"
+	@echo "... examples/example-ini.s"
+	@echo "... examples/example-log.o"
+	@echo "... examples/example-log.i"
+	@echo "... examples/example-log.s"
+	@echo "... examples/test-asn1-build.o"
+	@echo "... examples/test-asn1-build.i"
+	@echo "... examples/test-asn1-build.s"
+	@echo "... examples/test-asn1-cert.o"
+	@echo "... examples/test-asn1-cert.i"
+	@echo "... examples/test-asn1-cert.s"
+	@echo "... examples/test-asn1-keys.o"
+	@echo "... examples/test-asn1-keys.i"
+	@echo "... examples/test-asn1-keys.s"
+	@echo "... examples/test-asn1-parse.o"
+	@echo "... examples/test-asn1-parse.i"
+	@echo "... examples/test-asn1-parse.s"
+	@echo "... examples/test-blom-keys.o"
+	@echo "... examples/test-blom-keys.i"
+	@echo "... examples/test-blom-keys.s"
+	@echo "... examples/test-gf2n.o"
+	@echo "... examples/test-gf2n.i"
+	@echo "... examples/test-gf2n.s"
+	@echo "... examples/test-mgm01.o"
+	@echo "... examples/test-mgm01.i"
+	@echo "... examples/test-mgm01.s"
+	@echo "... examples/test-random01.o"
+	@echo "... examples/test-random01.i"
+	@echo "... examples/test-random01.s"
+	@echo "... examples/test-sign01.o"
+	@echo "... examples/test-sign01.i"
+	@echo "... examples/test-sign01.s"
+	@echo "... examples/test-xtsmac01.o"
+	@echo "... examples/test-xtsmac01.i"
+	@echo "... examples/test-xtsmac01.s"
+	@echo "... source/ak_acpkm.o"
+	@echo "... source/ak_acpkm.i"
+	@echo "... source/ak_acpkm.s"
+	@echo "... source/ak_asn1.o"
+	@echo "... source/ak_asn1.i"
+	@echo "... source/ak_asn1.s"
+	@echo "... source/ak_asn1_cert.o"
+	@echo "... source/ak_asn1_cert.i"
+	@echo "... source/ak_asn1_cert.s"
+	@echo "... source/ak_asn1_keys.o"
+	@echo "... source/ak_asn1_keys.i"
+	@echo "... source/ak_asn1_keys.s"
+	@echo "... source/ak_base64.o"
+	@echo "... source/ak_base64.i"
+	@echo "... source/ak_base64.s"
+	@echo "... source/ak_bckey.o"
+	@echo "... source/ak_bckey.i"
+	@echo "... source/ak_bckey.s"
+	@echo "... source/ak_blom.o"
+	@echo "... source/ak_blom.i"
+	@echo "... source/ak_blom.s"
+	@echo "... source/ak_cmac.o"
+	@echo "... source/ak_cmac.i"
+	@echo "... source/ak_cmac.s"
+	@echo "... source/ak_curves.o"
+	@echo "... source/ak_curves.i"
+	@echo "... source/ak_curves.s"
+	@echo "... source/ak_file.o"
+	@echo "... source/ak_file.i"
+	@echo "... source/ak_file.s"
+	@echo "... source/ak_gf2n.o"
+	@echo "... source/ak_gf2n.i"
+	@echo "... source/ak_gf2n.s"
+	@echo "... source/ak_hash.o"
+	@echo "... source/ak_hash.i"
+	@echo "... source/ak_hash.s"
+	@echo "... source/ak_hmac.o"
+	@echo "... source/ak_hmac.i"
+	@echo "... source/ak_hmac.s"
+	@echo "... source/ak_ini.o"
+	@echo "... source/ak_ini.i"
+	@echo "... source/ak_ini.s"
+	@echo "... source/ak_kuznechik.o"
+	@echo "... source/ak_kuznechik.i"
+	@echo "... source/ak_kuznechik.s"
+	@echo "... source/ak_libakrypt.o"
+	@echo "... source/ak_libakrypt.i"
+	@echo "... source/ak_libakrypt.s"
+	@echo "... source/ak_list.o"
+	@echo "... source/ak_list.i"
+	@echo "... source/ak_list.s"
+	@echo "... source/ak_mac.o"
+	@echo "... source/ak_mac.i"
+	@echo "... source/ak_mac.s"
+	@echo "... source/ak_magma.o"
+	@echo "... source/ak_magma.i"
+	@echo "... source/ak_magma.s"
+	@echo "... source/ak_mgm.o"
+	@echo "... source/ak_mgm.i"
+	@echo "... source/ak_mgm.s"
+	@echo "... source/ak_mpzn.o"
+	@echo "... source/ak_mpzn.i"
+	@echo "... source/ak_mpzn.s"
+	@echo "... source/ak_oid.o"
+	@echo "... source/ak_oid.i"
+	@echo "... source/ak_oid.s"
+	@echo "... source/ak_options.o"
+	@echo "... source/ak_options.i"
+	@echo "... source/ak_options.s"
+	@echo "... source/ak_parameters.o"
+	@echo "... source/ak_parameters.i"
+	@echo "... source/ak_parameters.s"
+	@echo "... source/ak_random.o"
+	@echo "... source/ak_random.i"
+	@echo "... source/ak_random.s"
+	@echo "... source/ak_sign.o"
+	@echo "... source/ak_sign.i"
+	@echo "... source/ak_sign.s"
+	@echo "... source/ak_skey.o"
+	@echo "... source/ak_skey.i"
+	@echo "... source/ak_skey.s"
+	@echo "... source/ak_tools.o"
+	@echo "... source/ak_tools.i"
+	@echo "... source/ak_tools.s"
+	@echo "... source/ak_xts.o"
+	@echo "... source/ak_xts.i"
+	@echo "... source/ak_xts.s"
 .PHONY : help
 
 

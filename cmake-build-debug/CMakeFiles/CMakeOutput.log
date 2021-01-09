@@ -288,3 +288,1232 @@ Parsed CXX implicit link information from above output:
   implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks]
 
 
+Performing C SOURCE FILE Test AK_HAVE_WALL succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7c357/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7c357.dir/build.make CMakeFiles/cmTC_7c357.dir/build
+Building C object CMakeFiles/cmTC_7c357.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DAK_HAVE_WALL -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -Wall -o CMakeFiles/cmTC_7c357.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7c357
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_7c357.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -DAK_HAVE_WALL -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_7c357.dir/src.c.o  -o cmTC_7c357 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_PEDANTIC_ERRORS succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ed0b5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ed0b5.dir/build.make CMakeFiles/cmTC_ed0b5.dir/build
+Building C object CMakeFiles/cmTC_ed0b5.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -DAK_HAVE_PEDANTIC_ERRORS -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -pedantic-errors -o CMakeFiles/cmTC_ed0b5.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ed0b5
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_ed0b5.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -DAK_HAVE_PEDANTIC_ERRORS -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_ed0b5.dir/src.c.o  -o cmTC_ed0b5 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_O3 succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_45118/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_45118.dir/build.make CMakeFiles/cmTC_45118.dir/build
+Building C object CMakeFiles/cmTC_45118.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -DAK_HAVE_O3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -O3 -o CMakeFiles/cmTC_45118.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_45118
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_45118.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -DAK_HAVE_O3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_45118.dir/src.c.o  -o cmTC_45118 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_FUNROLL_LOOPS succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9e05e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9e05e.dir/build.make CMakeFiles/cmTC_9e05e.dir/build
+Building C object CMakeFiles/cmTC_9e05e.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -DAK_HAVE_FUNROLL_LOOPS -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -funroll-loops -o CMakeFiles/cmTC_9e05e.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9e05e
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_9e05e.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -DAK_HAVE_FUNROLL_LOOPS -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9e05e.dir/src.c.o  -o cmTC_9e05e 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_PIPE succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8b7ee/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8b7ee.dir/build.make CMakeFiles/cmTC_8b7ee.dir/build
+Building C object CMakeFiles/cmTC_8b7ee.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -DAK_HAVE_PIPE -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -pipe -o CMakeFiles/cmTC_8b7ee.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8b7ee
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_8b7ee.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -DAK_HAVE_PIPE -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8b7ee.dir/src.c.o  -o cmTC_8b7ee 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_MPCLMUL succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fe562/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fe562.dir/build.make CMakeFiles/cmTC_fe562.dir/build
+Building C object CMakeFiles/cmTC_fe562.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -DAK_HAVE_MPCLMUL -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -mpclmul -o CMakeFiles/cmTC_fe562.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fe562
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_fe562.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -DAK_HAVE_MPCLMUL -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_fe562.dir/src.c.o  -o cmTC_fe562 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_MSSE succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_219f8/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_219f8.dir/build.make CMakeFiles/cmTC_219f8.dir/build
+Building C object CMakeFiles/cmTC_219f8.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -DAK_HAVE_MSSE -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -msse -o CMakeFiles/cmTC_219f8.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_219f8
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_219f8.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -DAK_HAVE_MSSE -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_219f8.dir/src.c.o  -o cmTC_219f8 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_MSSE2 succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e499c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e499c.dir/build.make CMakeFiles/cmTC_e499c.dir/build
+Building C object CMakeFiles/cmTC_e499c.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -DAK_HAVE_MSSE2 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -msse2 -o CMakeFiles/cmTC_e499c.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e499c
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_e499c.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -DAK_HAVE_MSSE2 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e499c.dir/src.c.o  -o cmTC_e499c 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_MAVX succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_edfbc/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_edfbc.dir/build.make CMakeFiles/cmTC_edfbc.dir/build
+Building C object CMakeFiles/cmTC_edfbc.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -DAK_HAVE_MAVX -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -mavx -o CMakeFiles/cmTC_edfbc.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_edfbc
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_edfbc.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -DAK_HAVE_MAVX -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_edfbc.dir/src.c.o  -o cmTC_edfbc 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_MAVX2 succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5b2b8/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5b2b8.dir/build.make CMakeFiles/cmTC_5b2b8.dir/build
+Building C object CMakeFiles/cmTC_5b2b8.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -DAK_HAVE_MAVX2 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -mavx2 -o CMakeFiles/cmTC_5b2b8.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5b2b8
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_5b2b8.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -DAK_HAVE_MAVX2 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_5b2b8.dir/src.c.o  -o cmTC_5b2b8 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_STDDEF_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_61de9/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_61de9.dir/build.make CMakeFiles/cmTC_61de9.dir/build
+Building C object CMakeFiles/cmTC_61de9.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDDEF_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_61de9.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:4:12: warning: unused variable 'ptr' [-Wunused-variable]
+     void *ptr = NULL;
+           ^
+1 warning generated.
+Linking C executable cmTC_61de9
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_61de9.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDDEF_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_61de9.dir/src.c.o  -o cmTC_61de9 
+
+
+Source file was:
+
+  #include <stddef.h>
+  int main( void ) {
+     void *ptr = NULL;
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_STDIO_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_07fa5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_07fa5.dir/build.make CMakeFiles/cmTC_07fa5.dir/build
+Building C object CMakeFiles/cmTC_07fa5.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDIO_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_07fa5.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_07fa5
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_07fa5.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDIO_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_07fa5.dir/src.c.o  -o cmTC_07fa5 
+
+
+Source file was:
+
+  #include <stdio.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_STDLIB_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_634ab/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_634ab.dir/build.make CMakeFiles/cmTC_634ab.dir/build
+Building C object CMakeFiles/cmTC_634ab.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDLIB_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_634ab.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_634ab
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_634ab.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDLIB_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_634ab.dir/src.c.o  -o cmTC_634ab 
+
+
+Source file was:
+
+  #include <stdlib.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_STRING_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_282d5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_282d5.dir/build.make CMakeFiles/cmTC_282d5.dir/build
+Building C object CMakeFiles/cmTC_282d5.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STRING_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_282d5.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_282d5
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_282d5.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STRING_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_282d5.dir/src.c.o  -o cmTC_282d5 
+
+
+Source file was:
+
+  #include <string.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_STRINGS_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d5536/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d5536.dir/build.make CMakeFiles/cmTC_d5536.dir/build
+Building C object CMakeFiles/cmTC_d5536.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STRINGS_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_d5536.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d5536
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_d5536.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STRINGS_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_d5536.dir/src.c.o  -o cmTC_d5536 
+
+
+Source file was:
+
+  #include <strings.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_CTYPE_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dd257/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_dd257.dir/build.make CMakeFiles/cmTC_dd257.dir/build
+Building C object CMakeFiles/cmTC_dd257.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_CTYPE_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_dd257.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_dd257
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_dd257.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_CTYPE_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_dd257.dir/src.c.o  -o cmTC_dd257 
+
+
+Source file was:
+
+  #include <ctype.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_TIME_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d8c05/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d8c05.dir/build.make CMakeFiles/cmTC_d8c05.dir/build
+Building C object CMakeFiles/cmTC_d8c05.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_TIME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_d8c05.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d8c05
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_d8c05.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_TIME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_d8c05.dir/src.c.o  -o cmTC_d8c05 
+
+
+Source file was:
+
+  #include <time.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSTIME_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e5f5e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e5f5e.dir/build.make CMakeFiles/cmTC_e5f5e.dir/build
+Building C object CMakeFiles/cmTC_e5f5e.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSTIME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_e5f5e.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e5f5e
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_e5f5e.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSTIME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e5f5e.dir/src.c.o  -o cmTC_e5f5e 
+
+
+Source file was:
+
+  #include <sys/time.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSLOG_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9813e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9813e.dir/build.make CMakeFiles/cmTC_9813e.dir/build
+Building C object CMakeFiles/cmTC_9813e.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSLOG_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_9813e.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9813e
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_9813e.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSLOG_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9813e.dir/src.c.o  -o cmTC_9813e 
+
+
+Source file was:
+
+  #include <syslog.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_UNISTD_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5d9a7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5d9a7.dir/build.make CMakeFiles/cmTC_5d9a7.dir/build
+Building C object CMakeFiles/cmTC_5d9a7.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_UNISTD_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_5d9a7.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5d9a7
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_5d9a7.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_UNISTD_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_5d9a7.dir/src.c.o  -o cmTC_5d9a7 
+
+
+Source file was:
+
+  #include <unistd.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_FCNTL_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c47f7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c47f7.dir/build.make CMakeFiles/cmTC_c47f7.dir/build
+Building C object CMakeFiles/cmTC_c47f7.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_FCNTL_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_c47f7.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c47f7
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_c47f7.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_FCNTL_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c47f7.dir/src.c.o  -o cmTC_c47f7 
+
+
+Source file was:
+
+  #include <fcntl.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_LIMITS_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f5191/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f5191.dir/build.make CMakeFiles/cmTC_f5191.dir/build
+Building C object CMakeFiles/cmTC_f5191.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_LIMITS_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_f5191.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f5191
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_f5191.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_LIMITS_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f5191.dir/src.c.o  -o cmTC_f5191 
+
+
+Source file was:
+
+  #include <limits.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSMMAN_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a7d8d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a7d8d.dir/build.make CMakeFiles/cmTC_a7d8d.dir/build
+Building C object CMakeFiles/cmTC_a7d8d.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSMMAN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_a7d8d.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a7d8d
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_a7d8d.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSMMAN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a7d8d.dir/src.c.o  -o cmTC_a7d8d 
+
+
+Source file was:
+
+  #include <sys/mman.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSSTAT_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0d4a0/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0d4a0.dir/build.make CMakeFiles/cmTC_0d4a0.dir/build
+Building C object CMakeFiles/cmTC_0d4a0.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSSTAT_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_0d4a0.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_0d4a0
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_0d4a0.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSSTAT_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_0d4a0.dir/src.c.o  -o cmTC_0d4a0 
+
+
+Source file was:
+
+  #include <sys/stat.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSTYPES_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4f8af/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4f8af.dir/build.make CMakeFiles/cmTC_4f8af.dir/build
+Building C object CMakeFiles/cmTC_4f8af.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSTYPES_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_4f8af.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4f8af
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_4f8af.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSTYPES_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_4f8af.dir/src.c.o  -o cmTC_4f8af 
+
+
+Source file was:
+
+  #include <sys/types.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSSOCKET_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e80d5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e80d5.dir/build.make CMakeFiles/cmTC_e80d5.dir/build
+Building C object CMakeFiles/cmTC_e80d5.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSSOCKET_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_e80d5.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e80d5
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_e80d5.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSSOCKET_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e80d5.dir/src.c.o  -o cmTC_e80d5 
+
+
+Source file was:
+
+  #include <sys/socket.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSUN_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b9a0f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b9a0f.dir/build.make CMakeFiles/cmTC_b9a0f.dir/build
+Building C object CMakeFiles/cmTC_b9a0f.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSUN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_b9a0f.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:5:29: warning: unused variable 'sock' [-Wunused-variable]
+         struct sockaddr_un sock;
+                            ^
+1 warning generated.
+Linking C executable cmTC_b9a0f
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_b9a0f.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSUN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b9a0f.dir/src.c.o  -o cmTC_b9a0f 
+
+
+Source file was:
+
+      #include <sys/un.h>
+      #include <sys/socket.h>
+      int main( void ) {
+         struct sockaddr_un sock;
+        return 0;
+      }
+Performing C SOURCE FILE Test AK_HAVE_SYSSELECT_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bcb98/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bcb98.dir/build.make CMakeFiles/cmTC_bcb98.dir/build
+Building C object CMakeFiles/cmTC_bcb98.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSSELECT_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_bcb98.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_bcb98
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_bcb98.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSSELECT_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_bcb98.dir/src.c.o  -o cmTC_bcb98 
+
+
+Source file was:
+
+  #include <sys/select.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_WALL succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8f857/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8f857.dir/build.make CMakeFiles/cmTC_8f857.dir/build
+Building C object CMakeFiles/cmTC_8f857.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DAK_HAVE_WALL -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -Wall -o CMakeFiles/cmTC_8f857.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8f857
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_8f857.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -DAK_HAVE_WALL -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8f857.dir/src.c.o  -o cmTC_8f857 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_PEDANTIC_ERRORS succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7fa78/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7fa78.dir/build.make CMakeFiles/cmTC_7fa78.dir/build
+Building C object CMakeFiles/cmTC_7fa78.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -DAK_HAVE_PEDANTIC_ERRORS -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -pedantic-errors -o CMakeFiles/cmTC_7fa78.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7fa78
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_7fa78.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -DAK_HAVE_PEDANTIC_ERRORS -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_7fa78.dir/src.c.o  -o cmTC_7fa78 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_O3 succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ec183/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ec183.dir/build.make CMakeFiles/cmTC_ec183.dir/build
+Building C object CMakeFiles/cmTC_ec183.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -DAK_HAVE_O3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -O3 -o CMakeFiles/cmTC_ec183.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ec183
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_ec183.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -DAK_HAVE_O3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_ec183.dir/src.c.o  -o cmTC_ec183 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_FUNROLL_LOOPS succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_31909/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_31909.dir/build.make CMakeFiles/cmTC_31909.dir/build
+Building C object CMakeFiles/cmTC_31909.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -DAK_HAVE_FUNROLL_LOOPS -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -funroll-loops -o CMakeFiles/cmTC_31909.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_31909
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_31909.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -DAK_HAVE_FUNROLL_LOOPS -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_31909.dir/src.c.o  -o cmTC_31909 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_PIPE succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6638c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6638c.dir/build.make CMakeFiles/cmTC_6638c.dir/build
+Building C object CMakeFiles/cmTC_6638c.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -DAK_HAVE_PIPE -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -pipe -o CMakeFiles/cmTC_6638c.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6638c
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_6638c.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -DAK_HAVE_PIPE -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6638c.dir/src.c.o  -o cmTC_6638c 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_MPCLMUL succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_94489/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_94489.dir/build.make CMakeFiles/cmTC_94489.dir/build
+Building C object CMakeFiles/cmTC_94489.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -DAK_HAVE_MPCLMUL -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -mpclmul -o CMakeFiles/cmTC_94489.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_94489
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_94489.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -DAK_HAVE_MPCLMUL -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_94489.dir/src.c.o  -o cmTC_94489 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_MSSE succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dabdd/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_dabdd.dir/build.make CMakeFiles/cmTC_dabdd.dir/build
+Building C object CMakeFiles/cmTC_dabdd.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -DAK_HAVE_MSSE -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -msse -o CMakeFiles/cmTC_dabdd.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_dabdd
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_dabdd.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -DAK_HAVE_MSSE -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_dabdd.dir/src.c.o  -o cmTC_dabdd 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_MSSE2 succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_edf89/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_edf89.dir/build.make CMakeFiles/cmTC_edf89.dir/build
+Building C object CMakeFiles/cmTC_edf89.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -DAK_HAVE_MSSE2 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -msse2 -o CMakeFiles/cmTC_edf89.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_edf89
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_edf89.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -DAK_HAVE_MSSE2 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_edf89.dir/src.c.o  -o cmTC_edf89 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_MAVX succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5d1cd/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5d1cd.dir/build.make CMakeFiles/cmTC_5d1cd.dir/build
+Building C object CMakeFiles/cmTC_5d1cd.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -DAK_HAVE_MAVX -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -mavx -o CMakeFiles/cmTC_5d1cd.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5d1cd
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_5d1cd.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -DAK_HAVE_MAVX -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_5d1cd.dir/src.c.o  -o cmTC_5d1cd 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_MAVX2 succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_47a72/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_47a72.dir/build.make CMakeFiles/cmTC_47a72.dir/build
+Building C object CMakeFiles/cmTC_47a72.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -DAK_HAVE_MAVX2 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -mavx2 -o CMakeFiles/cmTC_47a72.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_47a72
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_47a72.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -DAK_HAVE_MAVX2 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_47a72.dir/src.c.o  -o cmTC_47a72 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test AK_HAVE_STDDEF_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4774d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4774d.dir/build.make CMakeFiles/cmTC_4774d.dir/build
+Building C object CMakeFiles/cmTC_4774d.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDDEF_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_4774d.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:4:12: warning: unused variable 'ptr' [-Wunused-variable]
+     void *ptr = NULL;
+           ^
+1 warning generated.
+Linking C executable cmTC_4774d
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_4774d.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDDEF_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_4774d.dir/src.c.o  -o cmTC_4774d 
+
+
+Source file was:
+
+  #include <stddef.h>
+  int main( void ) {
+     void *ptr = NULL;
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_STDIO_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8f98f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8f98f.dir/build.make CMakeFiles/cmTC_8f98f.dir/build
+Building C object CMakeFiles/cmTC_8f98f.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDIO_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_8f98f.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8f98f
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_8f98f.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDIO_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8f98f.dir/src.c.o  -o cmTC_8f98f 
+
+
+Source file was:
+
+  #include <stdio.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_STDLIB_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_79225/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_79225.dir/build.make CMakeFiles/cmTC_79225.dir/build
+Building C object CMakeFiles/cmTC_79225.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDLIB_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_79225.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_79225
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_79225.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDLIB_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_79225.dir/src.c.o  -o cmTC_79225 
+
+
+Source file was:
+
+  #include <stdlib.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_STRING_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d08ba/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d08ba.dir/build.make CMakeFiles/cmTC_d08ba.dir/build
+Building C object CMakeFiles/cmTC_d08ba.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STRING_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_d08ba.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d08ba
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_d08ba.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STRING_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_d08ba.dir/src.c.o  -o cmTC_d08ba 
+
+
+Source file was:
+
+  #include <string.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_STRINGS_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_30141/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_30141.dir/build.make CMakeFiles/cmTC_30141.dir/build
+Building C object CMakeFiles/cmTC_30141.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STRINGS_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_30141.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_30141
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_30141.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STRINGS_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_30141.dir/src.c.o  -o cmTC_30141 
+
+
+Source file was:
+
+  #include <strings.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_CTYPE_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7a6f8/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7a6f8.dir/build.make CMakeFiles/cmTC_7a6f8.dir/build
+Building C object CMakeFiles/cmTC_7a6f8.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_CTYPE_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_7a6f8.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7a6f8
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_7a6f8.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_CTYPE_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_7a6f8.dir/src.c.o  -o cmTC_7a6f8 
+
+
+Source file was:
+
+  #include <ctype.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_TIME_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_38361/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_38361.dir/build.make CMakeFiles/cmTC_38361.dir/build
+Building C object CMakeFiles/cmTC_38361.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_TIME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_38361.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_38361
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_38361.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_TIME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_38361.dir/src.c.o  -o cmTC_38361 
+
+
+Source file was:
+
+  #include <time.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSTIME_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6ccf8/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6ccf8.dir/build.make CMakeFiles/cmTC_6ccf8.dir/build
+Building C object CMakeFiles/cmTC_6ccf8.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSTIME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_6ccf8.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6ccf8
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_6ccf8.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSTIME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6ccf8.dir/src.c.o  -o cmTC_6ccf8 
+
+
+Source file was:
+
+  #include <sys/time.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSLOG_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6e3e5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6e3e5.dir/build.make CMakeFiles/cmTC_6e3e5.dir/build
+Building C object CMakeFiles/cmTC_6e3e5.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSLOG_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_6e3e5.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6e3e5
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_6e3e5.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSLOG_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6e3e5.dir/src.c.o  -o cmTC_6e3e5 
+
+
+Source file was:
+
+  #include <syslog.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_UNISTD_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c121d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c121d.dir/build.make CMakeFiles/cmTC_c121d.dir/build
+Building C object CMakeFiles/cmTC_c121d.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_UNISTD_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_c121d.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c121d
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_c121d.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_UNISTD_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c121d.dir/src.c.o  -o cmTC_c121d 
+
+
+Source file was:
+
+  #include <unistd.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_FCNTL_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_51aa5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_51aa5.dir/build.make CMakeFiles/cmTC_51aa5.dir/build
+Building C object CMakeFiles/cmTC_51aa5.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_FCNTL_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_51aa5.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_51aa5
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_51aa5.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_FCNTL_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_51aa5.dir/src.c.o  -o cmTC_51aa5 
+
+
+Source file was:
+
+  #include <fcntl.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_LIMITS_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_48531/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_48531.dir/build.make CMakeFiles/cmTC_48531.dir/build
+Building C object CMakeFiles/cmTC_48531.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_LIMITS_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_48531.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_48531
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_48531.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_LIMITS_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_48531.dir/src.c.o  -o cmTC_48531 
+
+
+Source file was:
+
+  #include <limits.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSMMAN_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_57516/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_57516.dir/build.make CMakeFiles/cmTC_57516.dir/build
+Building C object CMakeFiles/cmTC_57516.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSMMAN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_57516.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_57516
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_57516.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSMMAN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_57516.dir/src.c.o  -o cmTC_57516 
+
+
+Source file was:
+
+  #include <sys/mman.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSSTAT_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_106ed/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_106ed.dir/build.make CMakeFiles/cmTC_106ed.dir/build
+Building C object CMakeFiles/cmTC_106ed.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSSTAT_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_106ed.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_106ed
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_106ed.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSSTAT_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_106ed.dir/src.c.o  -o cmTC_106ed 
+
+
+Source file was:
+
+  #include <sys/stat.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSTYPES_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_26fd0/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_26fd0.dir/build.make CMakeFiles/cmTC_26fd0.dir/build
+Building C object CMakeFiles/cmTC_26fd0.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSTYPES_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_26fd0.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_26fd0
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_26fd0.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSTYPES_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_26fd0.dir/src.c.o  -o cmTC_26fd0 
+
+
+Source file was:
+
+  #include <sys/types.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSSOCKET_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8c542/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8c542.dir/build.make CMakeFiles/cmTC_8c542.dir/build
+Building C object CMakeFiles/cmTC_8c542.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSSOCKET_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_8c542.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8c542
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_8c542.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSSOCKET_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8c542.dir/src.c.o  -o cmTC_8c542 
+
+
+Source file was:
+
+  #include <sys/socket.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SYSUN_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_03e42/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_03e42.dir/build.make CMakeFiles/cmTC_03e42.dir/build
+Building C object CMakeFiles/cmTC_03e42.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSUN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_03e42.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:5:29: warning: unused variable 'sock' [-Wunused-variable]
+         struct sockaddr_un sock;
+                            ^
+1 warning generated.
+Linking C executable cmTC_03e42
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_03e42.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSUN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_03e42.dir/src.c.o  -o cmTC_03e42 
+
+
+Source file was:
+
+      #include <sys/un.h>
+      #include <sys/socket.h>
+      int main( void ) {
+         struct sockaddr_un sock;
+        return 0;
+      }
+Performing C SOURCE FILE Test AK_HAVE_SYSSELECT_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_147da/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_147da.dir/build.make CMakeFiles/cmTC_147da.dir/build
+Building C object CMakeFiles/cmTC_147da.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSSELECT_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_147da.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_147da
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_147da.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SYSSELECT_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_147da.dir/src.c.o  -o cmTC_147da 
+
+
+Source file was:
+
+  #include <sys/select.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_ERRNO_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_399d1/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_399d1.dir/build.make CMakeFiles/cmTC_399d1.dir/build
+Building C object CMakeFiles/cmTC_399d1.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_ERRNO_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_399d1.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_399d1
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_399d1.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_ERRNO_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_399d1.dir/src.c.o  -o cmTC_399d1 
+
+
+Source file was:
+
+  #include <errno.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_TERMIOS_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d1724/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d1724.dir/build.make CMakeFiles/cmTC_d1724.dir/build
+Building C object CMakeFiles/cmTC_d1724.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_TERMIOS_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_d1724.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d1724
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_d1724.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_TERMIOS_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_d1724.dir/src.c.o  -o cmTC_d1724 
+
+
+Source file was:
+
+  #include <termios.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_DIRENT_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fe468/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fe468.dir/build.make CMakeFiles/cmTC_fe468.dir/build
+Building C object CMakeFiles/cmTC_fe468.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_DIRENT_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_fe468.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fe468
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_fe468.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_DIRENT_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_fe468.dir/src.c.o  -o cmTC_fe468 
+
+
+Source file was:
+
+  #include <dirent.h>
+  int main( void ) {
+     struct dirent st;
+     st.d_type = 4;
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_FNMATCH_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d0159/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d0159.dir/build.make CMakeFiles/cmTC_d0159.dir/build
+Building C object CMakeFiles/cmTC_d0159.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_FNMATCH_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_d0159.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d0159
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_d0159.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_FNMATCH_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_d0159.dir/src.c.o  -o cmTC_d0159 
+
+
+Source file was:
+
+  #include <fnmatch.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_STDALIGN_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_eff77/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_eff77.dir/build.make CMakeFiles/cmTC_eff77.dir/build
+Building C object CMakeFiles/cmTC_eff77.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDALIGN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_eff77.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_eff77
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_eff77.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDALIGN_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_eff77.dir/src.c.o  -o cmTC_eff77 
+
+
+Source file was:
+
+  #include <stdalign.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_STDARG_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6e2a3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6e2a3.dir/build.make CMakeFiles/cmTC_6e2a3.dir/build
+Building C object CMakeFiles/cmTC_6e2a3.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDARG_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_6e2a3.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6e2a3
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_6e2a3.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_STDARG_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6e2a3.dir/src.c.o  -o cmTC_6e2a3 
+
+
+Source file was:
+
+  #include <stdarg.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_GETOPT_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8929b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8929b.dir/build.make CMakeFiles/cmTC_8929b.dir/build
+Building C object CMakeFiles/cmTC_8929b.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_GETOPT_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_8929b.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8929b
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_8929b.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_GETOPT_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8929b.dir/src.c.o  -o cmTC_8929b 
+
+
+Source file was:
+
+  #include <getopt.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_LOCALE_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b9113/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b9113.dir/build.make CMakeFiles/cmTC_b9113.dir/build
+Building C object CMakeFiles/cmTC_b9113.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_LOCALE_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_b9113.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b9113
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_b9113.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_LOCALE_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b9113.dir/src.c.o  -o cmTC_b9113 
+
+
+Source file was:
+
+  #include <locale.h>
+  int main( void ) {
+     setlocale( LC_ALL, "" );
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_SIGNAL_H succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_76ad3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_76ad3.dir/build.make CMakeFiles/cmTC_76ad3.dir/build
+Building C object CMakeFiles/cmTC_76ad3.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SIGNAL_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_76ad3.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_76ad3
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_76ad3.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_SIGNAL_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_76ad3.dir/src.c.o  -o cmTC_76ad3 
+
+
+Source file was:
+
+  #include <signal.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test AK_HAVE_BUILTIN_MULQ_GCC succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6cccf/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6cccf.dir/build.make CMakeFiles/cmTC_6cccf.dir/build
+Building C object CMakeFiles/cmTC_6cccf.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_6cccf.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6cccf
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_6cccf.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6cccf.dir/src.c.o  -o cmTC_6cccf 
+
+
+Source file was:
+
+  #include <sys/types.h>
+  int main( void ) {
+    #if defined( __x86_64__ )
+      u_int64_t w1, w0, u = 1, v = 2;
+      __asm__ ("mulq %3" : "=a,a" (w0), "=d,d" (w1) : "%0,0" (u), "r,m" (v));
+      return 0;
+    #else
+      #error Unsupported architecture
+    #endif
+  }
+Performing C SOURCE FILE Test AK_HAVE_BUILTIN_CLMULEPI64 succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_db9dc/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_db9dc.dir/build.make CMakeFiles/cmTC_db9dc.dir/build
+Building C object CMakeFiles/cmTC_db9dc.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_db9dc.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:30: warning: variable 'a' is uninitialized when used here [-Wuninitialized]
+   c = _mm_clmulepi64_si128( a, b, 0x00 );
+                             ^
+/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include/__wmmintrin_pclmul.h:45:59: note: expanded from macro '_mm_clmulepi64_si128'
+  ((__m128i)__builtin_ia32_pclmulqdq128((__v2di)(__m128i)(X), \
+                                                          ^
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:5:4: note: variable 'a' is declared here
+   __m128i a, b, c;
+   ^
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:33: warning: variable 'b' is uninitialized when used here [-Wuninitialized]
+   c = _mm_clmulepi64_si128( a, b, 0x00 );
+                                ^
+/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include/__wmmintrin_pclmul.h:46:59: note: expanded from macro '_mm_clmulepi64_si128'
+                                        (__v2di)(__m128i)(Y), (char)(I)))
+                                                          ^
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:5:4: note: variable 'b' is declared here
+   __m128i a, b, c;
+   ^
+2 warnings generated.
+Linking C executable cmTC_db9dc
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_db9dc.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_db9dc.dir/src.c.o  -o cmTC_db9dc 
+
+
+Source file was:
+
+  #include <wmmintrin.h>
+  int main( void ) {
+
+   __m128i a, b, c;
+   c = _mm_clmulepi64_si128( a, b, 0x00 );
+
+  return 0;
+ }
+Performing C SOURCE FILE Test AK_HAVE_BUILTIN_MM256_SLL succeeded with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9b390/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9b390.dir/build.make CMakeFiles/cmTC_9b390.dir/build
+Building C object CMakeFiles/cmTC_9b390.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_9b390.dir/src.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:9:12: warning: unused variable 'm3' [-Wunused-variable]
+   __m256i m3 = _mm256_sll_epi64( theta, count );
+           ^
+/Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:12: warning: unused variable 'm2' [-Wunused-variable]
+   __m256i m2 = _mm256_srli_epi64( theta, 63 );
+           ^
+2 warnings generated.
+Linking C executable cmTC_9b390
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_9b390.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9b390.dir/src.c.o  -o cmTC_9b390 
+
+
+Source file was:
+
+  #include <immintrin.h>
+  int main( void ) {
+
+   __m256i theta = _mm256_setr_epi64x( 0x425, 0, 0, 0 );
+   __m256i m2 = _mm256_srli_epi64( theta, 63 );
+
+   __m128i count = _mm_setr_epi32( 1, 0, 0, 0 );
+   __m256i m3 = _mm256_sll_epi64( theta, count );
+
+  return 0;
+ }
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_68444/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_68444.dir/build.make CMakeFiles/cmTC_68444.dir/build
+Building C object CMakeFiles/cmTC_68444.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_68444.dir/CheckIncludeFile.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_68444
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_68444.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_68444.dir/CheckIncludeFile.c.o  -o cmTC_68444 
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1f00e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1f00e.dir/build.make CMakeFiles/cmTC_1f00e.dir/build
+Building C object CMakeFiles/cmTC_1f00e.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_1f00e.dir/CheckIncludeFile.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1f00e
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_1f00e.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_1f00e.dir/CheckIncludeFile.c.o  -o cmTC_1f00e 
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_963e5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_963e5.dir/build.make CMakeFiles/cmTC_963e5.dir/build
+Building C object CMakeFiles/cmTC_963e5.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_963e5.dir/CheckIncludeFile.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_963e5
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_963e5.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_963e5.dir/CheckIncludeFile.c.o  -o cmTC_963e5 
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0dc46/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0dc46.dir/build.make CMakeFiles/cmTC_0dc46.dir/build
+Building C object CMakeFiles/cmTC_0dc46.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_0dc46.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_0dc46
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_0dc46.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_0dc46.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTC_0dc46 
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9d3a3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9d3a3.dir/build.make CMakeFiles/cmTC_9d3a3.dir/build
+Building C object CMakeFiles/cmTC_9d3a3.dir/TestEndianess.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_9d3a3.dir/TestEndianess.c.o   -c /Users/r.anchugov/CLionProjects/PaziLab2/cmake-build-debug/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_9d3a3
+"/Users/r.anchugov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_9d3a3.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -pedantic-errors -O3 -funroll-loops -pipe -mpclmul -msse -msse2 -mavx -mavx2 -DAK_HAVE_BUILTIN_MULQ_GCC -DAK_HAVE_BUILTIN_CLMULEPI64 -DAK_HAVE_BUILTIN_MM256_SLL  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9d3a3.dir/TestEndianess.c.o  -o cmTC_9d3a3 
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+

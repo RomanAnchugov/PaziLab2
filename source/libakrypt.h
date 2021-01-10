@@ -164,7 +164,7 @@ extern "C" {
 /*! \brief Тестирование алгоритма PBKDF2, регламентируемого Р 50.1.113-2016. */
  dll_export bool_t ak_libakrypt_test_pbkdf2( void );
 /*! \brief Функция тестирует корректность реализации блочных шифрова и режимов их использования. */
- dll_export bool_t ak_libakrypt_test_block_ciphers( void ); 
+ dll_export bool_t ak_libakrypt_test_block_ciphers( void );
 /*! \brief Тестирование корректной работы алгоритма блочного шифрования Магма (ГОСТ Р 34.12-2015). */
  dll_export bool_t ak_libakrypt_test_magma( void );
 /*! \brief Тестирование корректной работы алгоритма блочного шифрования Кузнечик (ГОСТ Р 34.12-2015). */
@@ -763,7 +763,7 @@ extern "C" {
 
 /* ----------------------------------------------------------------------------------------------- */
 /** \addtogroup mac-doc Вычисление кодов целостности (хеширование и имитозащита)
- @{ */ 
+ @{ */
 /*! \brief Вычисление имитовставки согласно ГОСТ Р 34.13-2015. */
  dll_export int ak_bckey_cmac( ak_bckey , ak_pointer , const size_t , ak_pointer , const size_t );
 /*! \brief Очистка внутреннего состояния секретного ключа. */
@@ -1913,6 +1913,10 @@ extern "C" {
  dll_export int ak_blomkey_import_from_file_with_password( ak_blomkey ,
                                                             const char * , const size_t , char * );
 /** @} *//** @} */
+
+/* ----------------------------------------------------------------------------------------------- */
+/**POLY-1305 */
+void poly1305(char *msg, char *key);
 
 #ifdef __cplusplus
 } /* конец extern "C" */

@@ -112,17 +112,10 @@ void poly1305(char *msg, char *key) {
         ak_mpzn_mul(dop, r, a, 4);
         print_mpzn(dop, 4);
 
-
-        //TODO: a = dop % p
-        int cmp_res = ak_mpzn_cmp(dop, p, 4);
-
-        printf("P\n");
-        print_mpzn(dop, 4);
-        ak_mpzn_sub(dop, dop, dop, 4);
-        print_mpzn(dop, 4);
-
-        printf("\\perscent a\n");
-        print_mpzn(dop, 4);
+        // a = dop % p NOT PROPERLY WORKING
+        print_mpzn(p, 3);
+        ak_mpzn_rem(a, dop, p, 4);
+        print_mpzn(a, 4);
     }
 
     //TODO: a += s

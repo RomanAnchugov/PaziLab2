@@ -1916,7 +1916,7 @@ extern "C" {
 
 /* ----------------------------------------------------------------------------------------------- */
 /**POLY-1305 */
-void poly1305(char *msg, char *key);
+const char* poly1305(char *msg, char *key);
 
 #ifdef __cplusplus
 } /* конец extern "C" */

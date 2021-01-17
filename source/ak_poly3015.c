@@ -18,11 +18,8 @@ void print_mpzn(ak_uint64 *to_print, int size) {
 ak_uint128 clamp(ak_uint128 to_clamp) {
     ak_uint128 clamper;
     ak_mpzn_set_hexstr(clamper.q, 2, "0ffffffc0ffffffc0ffffffc0fffffff");
-    print_mpzn(clamper.q, 2);
-    print_mpzn(to_clamp.q, 2);
     to_clamp.q[0] &= clamper.q[0];
     to_clamp.q[1] &= clamper.q[1];
-    print_mpzn(to_clamp.q, 2);
     return to_clamp;
 }
 
@@ -83,24 +80,20 @@ void shift_left(ak_uint64 *r, const ak_uint64 *from, size_t shift_count) {
 
 void rem(ak_uint64 *r, ak_uint64 *u, ak_uint64 *p) {
     const size_t size = ak_mpzn512_size;
-    ak_mpzn512 shifted;
+    ak_mpzn512 shifted_p;
     ak_mpzn512 from;
     ak_mpzn_set(from, u, size);
 
     for (int i = 256; i >= 0; --i) {
-        printf("\n\nBEFORE\n");
-        print_mpzn(p, size);
-        shift_left(shifted, p, i);
-        printf("AFTER\n");
-        print_mpzn(shifted, size);
-        if (ak_mpzn_cmp(shifted, from, size) == -1)
-            ak_mpzn_sub(from, from, shifted, size);
+        shift_left(shifted_p, p, i);
+        if (ak_mpzn_cmp(shifted_p, from, size) == -1)
+            ak_mpzn_sub(from, from, shifted_p, size);
     }
 
     ak_mpzn_set(r, from, size);
 }
 
-const char* poly1305(char *msg, char *key) {
+const char *poly1305(char *msg, char *key) {
     ak_mpzn512 r = ak_mpzn512_zero;
     ak_mpzn512 s = ak_mpzn512_zero;
     ak_uint128 s_num = le_bytes_to_num(key + 32, 32, ak_true);
@@ -154,19 +147,17 @@ const char* poly1305(char *msg, char *key) {
         ak_mpzn_mul(dop, r, a, ak_mpzn512_size);
         print_mpzn(dop, ak_mpzn512_size);
 
-        // a = dop % p NOT PROPERLY WORKING
-        printf("P = ");
-        print_mpzn(p, ak_mpzn512_size);
+        // a = dop % p
         printf("((Acc+Block) * r) mod p\n");
         rem(a, dop, p);
         print_mpzn(a, ak_mpzn512_size);
     }
 
-    printf("RESULT\n");
-    print_mpzn(s, ak_mpzn512_size);
+    printf("a += s\n");
     ak_mpzn_add(a, a, s, ak_mpzn512_size);
     print_mpzn(a, ak_mpzn512_size);
 
     const char *tag = num_to_16le_bytes(a, 2);
+    printf("POLY1305 RESULT TAG: %s", tag);
     return tag;
 }
